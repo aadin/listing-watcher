@@ -1,36 +1,54 @@
 import requests
+from bs4 import BeautifulSoup
 
-SEARCH_URL = "https://jp.mercari.com/en/search?keyword=beyblade%20metal%20fight"
+SEARCH_URL = "https://jp.mercari.com/en/search?keyword=beyblade%20metal%20fight&sort=created_time&order=desc"
 
 HEADERS = {
     "User-Agent": "listing-watcher/1.0"
 }
 
+
 def fetch_listings():
-    # TODO:
-    # 1. Request the search page or official API.
-    # 2. Parse the response.
-    # 3. Convert each result into the normalized format below.
+    print("=" * 60)
+    print("Starting fetch...")
+    print(f"URL: {SEARCH_URL}")
+    print("=" * 60)
 
-    response = requests.get(
-        SEARCH_URL,
-        headers=HEADERS,
-        timeout=20,
-    )
-    response.raise_for_status()
+    try:
+        response = requests.get(
+            SEARCH_URL,
+            headers=HEADERS,
+            timeout=20,
+        )
 
-    # Replace this with parsed results.
-    raw_items = []
+        print(f"[+] Status Code : {response.status_code}")
+        print(f"[+] Content-Type: {response.headers.get('Content-Type')}")
+        print(f"[+] HTML Size   : {len(response.text)} bytes")
 
-    listings = []
+        response.raise_for_status()
 
-    for item in raw_items:
-        listings.append({
-            "id": item["id"],
-            "title": item["title"],
-            "price": item["price"],
-            "url": item["url"],
-            "image": item["image"],
-        })
+    except requests.RequestException as e:
+        print(f"[!] Request failed: {e}")
+        return []
 
-    return listings
+    with open("debug.html", "w", encoding="utf-8") as f:
+        f.write(response.text)
+
+    print("[+] Saved response to debug.html")
+
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    print("\n===== Debug Information =====")
+    print(f"Title       : {soup.title.string if soup.title else 'None'}")
+    print(f"Links       : {len(soup.find_all('a'))}")
+    print(f"Images      : {len(soup.find_all('img'))}")
+    print(f"Forms       : {len(soup.find_all('form'))}")
+    print(f"Scripts     : {len(soup.find_all('script'))}")
+    print(f"Stylesheets : {len(soup.find_all('link'))}")
+    print("=============================")
+
+    return []
+
+
+if __name__ == "__main__":
+    fetch_listings()

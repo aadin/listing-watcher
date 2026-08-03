@@ -1,7 +1,7 @@
 import os
 import json
 
-from sources.example_source import fetch_listings
+from sources.mercari_source import fetch_listings
 from notifiers.discord import notify
 
 # Load config
