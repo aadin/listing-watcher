@@ -1,4 +1,3 @@
-
 name: Listing Watcher
 on:
   schedule:
@@ -13,4 +12,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python main.py
+      - env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: python main.py
