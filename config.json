@@ -1,0 +1,8 @@
+{
+  "webhook": "YOUR_DISCORD_WEBHOOK",
+  "poll_source": "example",
+  "keywords": [
+    "walkman",
+    "sony"
+  ]
+}
