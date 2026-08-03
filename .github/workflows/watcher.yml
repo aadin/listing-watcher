@@ -1,8 +1,13 @@
 name: Listing Watcher
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "* * * * *"
   workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: listing-watcher
+  cancel-in-progress: false
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -15,3 +20,9 @@ jobs:
       - env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: python main.py
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add seen.json
+          git diff --staged --quiet || git commit -m "update seen.json"
+          git push
