@@ -20,17 +20,32 @@ def _find_next_page_token(results):
     return None
 
 
+def _on_sale_status_filter():
+    # Try to find the "on sale only" status enum value defensively, since we
+    # can't confirm the exact member name without a live environment.
+    status_enum = getattr(SearchRequestData, "Status", None)
+    if status_enum is None:
+        return []
+    for attr in ("ON_SALE", "STATUS_ON_SALE", "SELLING"):
+        val = getattr(status_enum, attr, None)
+        if val is not None:
+            return [val]
+    return []
+
+
 async def _fetch():
     m = Mercapi()
 
     all_items = []
     page_token = None
+    status_filter = _on_sale_status_filter()
 
     for page_num in range(1, MAX_PAGES + 1):
         results = await m.search(
             KEYWORD,
             sort_by=SearchRequestData.SortBy.SORT_CREATED_TIME,
             sort_order=SearchRequestData.SortOrder.ORDER_DESC,
+            status=status_filter,
             page_token=page_token,
         )
 
@@ -38,6 +53,11 @@ async def _fetch():
         print(f"[+] Page {page_num}: {len(page_items)} items")
 
         for item in page_items:
+            status = getattr(item, "status", None)
+            status_str = str(status).lower() if status is not None else ""
+            if "sold" in status_str or "trading" in status_str:
+                continue
+
             item_id = getattr(item, "id_", None) or getattr(item, "id", None)
             all_items.append({
                 "id": item_id,
