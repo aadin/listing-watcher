@@ -3,7 +3,9 @@ import asyncio
 from mercapi import Mercapi
 from mercapi.requests import SearchRequestData
 
-KEYWORD = "beyblade metal fight"
+KEYWORD = "メタルファイト"  # narrows within the category to the "Metal Fight" era specifically
+CATEGORY_IDS = [10817]  # こま (spinning tops) — the category m93948632826 lives in
+BRAND_IDS = [10490]     # TAKARA TOMY
 MAX_PAGES = 3  # ~120 items per page -> up to ~360 items per run
 
 
@@ -43,6 +45,8 @@ async def _fetch():
     for page_num in range(1, MAX_PAGES + 1):
         results = await m.search(
             KEYWORD,
+            categories=CATEGORY_IDS,
+            brands=BRAND_IDS,
             sort_by=SearchRequestData.SortBy.SORT_CREATED_TIME,
             sort_order=SearchRequestData.SortOrder.ORDER_DESC,
             status=status_filter,
@@ -78,6 +82,7 @@ def fetch_listings():
     print("=" * 60)
     print("Starting fetch...")
     print(f"Keyword: {KEYWORD}")
+    print(f"Category: {CATEGORY_IDS}  Brand: {BRAND_IDS}")
     print("=" * 60)
 
     try:
