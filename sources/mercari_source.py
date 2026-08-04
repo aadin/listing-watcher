@@ -3,10 +3,39 @@ import asyncio
 from mercapi import Mercapi
 from mercapi.requests import SearchRequestData
 
-KEYWORD = "メタルファイト"  # narrows within the category to the "Metal Fight" era specifically
-CATEGORY_IDS = [10817]  # こま (spinning tops) — the category m93948632826 lives in
-BRAND_IDS = [10490]     # TAKARA TOMY
-MAX_PAGES = 3  # ~120 items per page -> up to ~360 items per run
+# Multiple search queries to cast a wider net.  Each query is run
+# independently and results are merged & deduplicated by item ID.
+#
+# Why multiple queries?
+#   - Brand filter excluded listings where sellers didn't tag TAKARA TOMY.
+#   - Category filter excluded mis-categorised listings.
+#   - A single keyword missed related product lines (e.g. Super Control).
+SEARCH_QUERIES = [
+    {
+        # Broad "Metal Fight Beyblade" search — NO category/brand restriction
+        # so we catch mis-categorised or unbranded listings.
+        "keyword": "メタルファイトベイブレード",
+        "categories": [],
+        "brands": [],
+    },
+    {
+        # "Metal Fight" within spinning-tops category, without brand filter.
+        # Catches items that only say "メタルファイト" without "ベイブレード"
+        # in the title, while the category keeps results relevant.
+        "keyword": "メタルファイト",
+        "categories": [10817],  # こま (spinning tops)
+        "brands": [],
+    },
+    {
+        # Related product lines like the Super Control Beyblade RC toys,
+        # which don't include "メタルファイト" in their title.
+        "keyword": "スーパーコントロールベイブレード",
+        "categories": [],
+        "brands": [],
+    },
+]
+
+MAX_PAGES = 3  # per query — ~120 items per page -> up to ~360 items per query
 
 
 def _find_next_page_token(results):
@@ -35,26 +64,31 @@ def _on_sale_status_filter():
     return []
 
 
-async def _fetch():
-    m = Mercapi()
+async def _run_single_query(m, query, status_filter):
+    """Run one search query across up to MAX_PAGES pages."""
+    keyword = query["keyword"]
+    categories = query.get("categories", [])
+    brands = query.get("brands", [])
 
-    all_items = []
+    items = []
     page_token = None
-    status_filter = _on_sale_status_filter()
 
     for page_num in range(1, MAX_PAGES + 1):
-        results = await m.search(
-            KEYWORD,
-            categories=CATEGORY_IDS,
-            brands=BRAND_IDS,
+        search_kwargs = dict(
             sort_by=SearchRequestData.SortBy.SORT_CREATED_TIME,
             sort_order=SearchRequestData.SortOrder.ORDER_DESC,
             status=status_filter,
             page_token=page_token,
         )
+        if categories:
+            search_kwargs["categories"] = categories
+        if brands:
+            search_kwargs["brands"] = brands
+
+        results = await m.search(keyword, **search_kwargs)
 
         page_items = results.items
-        print(f"[+] Page {page_num}: {len(page_items)} items")
+        print(f"  [+] Page {page_num}: {len(page_items)} items")
 
         for item in page_items:
             status = getattr(item, "status", None)
@@ -63,7 +97,7 @@ async def _fetch():
                 continue
 
             item_id = getattr(item, "id_", None) or getattr(item, "id", None)
-            all_items.append({
+            items.append({
                 "id": item_id,
                 "title": item.name,
                 "url": f"https://jp.mercari.com/item/{item_id}",
@@ -75,14 +109,41 @@ async def _fetch():
         if not page_token or not page_items:
             break
 
+    return items
+
+
+async def _fetch():
+    m = Mercapi()
+    status_filter = _on_sale_status_filter()
+
+    seen_ids = set()
+    all_items = []
+
+    for idx, query in enumerate(SEARCH_QUERIES, 1):
+        keyword = query["keyword"]
+        categories = query.get("categories", [])
+        brands = query.get("brands", [])
+        print(f"\n[Query {idx}/{len(SEARCH_QUERIES)}] "
+              f"keyword={keyword}  categories={categories}  brands={brands}")
+
+        query_items = await _run_single_query(m, query, status_filter)
+
+        new_count = 0
+        for item in query_items:
+            if item["id"] not in seen_ids:
+                seen_ids.add(item["id"])
+                all_items.append(item)
+                new_count += 1
+
+        print(f"  [+] {len(query_items)} results, {new_count} new (after dedup)")
+
     return all_items
 
 
 def fetch_listings():
     print("=" * 60)
     print("Starting fetch...")
-    print(f"Keyword: {KEYWORD}")
-    print(f"Category: {CATEGORY_IDS}  Brand: {BRAND_IDS}")
+    print(f"Running {len(SEARCH_QUERIES)} search queries")
     print("=" * 60)
 
     try:
@@ -91,7 +152,7 @@ def fetch_listings():
         print(f"[!] Request failed: {e}")
         return []
 
-    print(f"[+] Got {len(items)} listings total")
+    print(f"\n[+] Got {len(items)} unique listings total")
     print("=" * 60)
 
     return items
