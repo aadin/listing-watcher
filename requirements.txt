@@ -1,3 +1,4 @@
 requests
 mercapi
 beautifulsoup4
+deep-translator
