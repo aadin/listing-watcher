@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-SEARCH_URL = "https://jp.mercari.com/en/search?keyword=beyblade%20metal%20fight&sort=created_time&order=desc"
+SEARCH_URL = "https://jp.mercari.com/en/search?keyword=%E3%83%A1%E3%82%BF%E3%83%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%88%E3%83%99%E3%82%A4%E3%83%96%E3%83%AC%E3%83%BC%E3%83%89&status=on_sale&sort=created_time&order=desc"
 
 HEADERS = {
     "User-Agent": "listing-watcher/1.0"
