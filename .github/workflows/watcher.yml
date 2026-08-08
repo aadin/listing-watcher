@@ -19,6 +19,10 @@ jobs:
       - run: pip install -r requirements.txt
       - env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_WEBHOOK_DEALS: ${{ secrets.DISCORD_WEBHOOK_DEALS }}
+          DISCORD_WEBHOOK_MID_RANGE: ${{ secrets.DISCORD_WEBHOOK_MID_RANGE }}
+          DISCORD_WEBHOOK_PREMIUM: ${{ secrets.DISCORD_WEBHOOK_PREMIUM }}
+          DISCORD_WEBHOOK_SOLD: ${{ secrets.DISCORD_WEBHOOK_SOLD }}
         run: python main.py
       - run: |
           git config user.name "github-actions"

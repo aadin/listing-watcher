@@ -270,9 +270,13 @@ async def fetch_items_status_async(item_ids):
         try:
             item = await m.item(item_id)
             if item is None:
-                return None
+                return {"id": item_id, "status": "removed", "title": ""}
             return parse_item(item)
         except Exception as e:
+            # Handle deleted or invisible items (InvisibleItemException causes KeyError: 'data')
+            if isinstance(e, KeyError) and "data" in str(e):
+                return {"id": item_id, "status": "removed", "title": ""}
+            
             print(f"[!] Failed to fetch item {item_id}: {e}")
             return None
 

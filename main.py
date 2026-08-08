@@ -88,6 +88,10 @@ if active_ids_to_check:
             notify(webhooks_cfg, updated_item, price_tiers=price_tiers)
             seen[item_id]["status"] = "sold"
             changed = True
+        elif updated_item["status"] == "removed" and old_details.get("status") == "on_sale":
+            print(f"[#] Item {item_id} was removed/deleted.")
+            seen[item_id]["status"] = "removed"
+            changed = True
 
 # Save updated seen state
 if changed:
