@@ -10,6 +10,25 @@ def translate_title(text):
         return None
 
 
+# Cache the exchange rate to avoid making API requests for every single item in a run
+_jpy_to_inr_rate_cache = None
+
+def get_jpy_to_inr_rate():
+    global _jpy_to_inr_rate_cache
+    if _jpy_to_inr_rate_cache is not None:
+        return _jpy_to_inr_rate_cache
+    try:
+        r = requests.get("https://open.er-api.com/v6/latest/JPY", timeout=5)
+        if r.status_code == 200:
+            data = r.json()
+            rate = data["rates"]["INR"]
+            _jpy_to_inr_rate_cache = rate
+            return rate
+    except Exception as e:
+        print(f"[!] Failed to fetch JPY to INR exchange rate: {e}")
+    return 0.55  # Fallback exchange rate
+
+
 def notify(webhook_config, item, price_tiers=None):
     # 1. Resolve target webhook
     webhook_url = None
@@ -65,7 +84,9 @@ def notify(webhook_config, item, price_tiers=None):
         else:
             embed_color = 3447003  # 0x3498DB (Blue)
 
-    fields = [{"name": "Price", "value": f"¥{price:,}", "inline": True}]
+    inr_rate = get_jpy_to_inr_rate()
+    inr_price = int(price * inr_rate)
+    fields = [{"name": "Price", "value": f"¥{price:,} (~₹{inr_price:,})", "inline": True}]
     
     if condition:
         fields.append({"name": "Condition", "value": condition, "inline": True})
