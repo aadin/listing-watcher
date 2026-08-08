@@ -4,5 +4,17 @@
   "keywords": [
     "walkman",
     "sony"
-  ]
+  ],
+  "filter_auctions": true,
+  "price_tiers": {
+    "deals_limit": 3000,
+    "premium_start": 10000
+  },
+  "webhooks": {
+    "default": "YOUR_DISCORD_WEBHOOK",
+    "sold": "YOUR_DISCORD_WEBHOOK_SOLD",
+    "deals": "YOUR_DISCORD_WEBHOOK_DEALS",
+    "mid_range": "YOUR_DISCORD_WEBHOOK_MID_RANGE",
+    "premium": "YOUR_DISCORD_WEBHOOK_PREMIUM"
+  }
 }

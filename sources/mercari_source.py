@@ -38,6 +38,7 @@ SEARCH_QUERIES = [
 MAX_PAGES = 3  # per query — ~120 items per page -> up to ~360 items per query
 
 
+
 def _find_next_page_token(results):
     # Different mercapi versions have exposed this under slightly different
     # names, so check a few possibilities defensively rather than assuming one.
@@ -64,11 +65,118 @@ def _on_sale_status_filter():
     return []
 
 
+def _load_filter_auctions_config():
+    try:
+        import json
+        with open("config.json", "r") as f:
+            cfg = json.load(f)
+        return cfg.get("filter_auctions", True)
+    except Exception:
+        return True
+
+
+import re
+
+def resolve_condition(condition_id):
+    mapping = {
+        1: "🆕 Brand New/Unused",
+        2: "✨ Like New",
+        3: "📦 Excellent",
+        4: "📦 Very Good",
+        5: "📦 Fair",
+        6: "⚠️ Junk/Poor"
+    }
+    return mapping.get(condition_id, "📦 Used")
+
+
+def resolve_shipping(shipping_payer_id):
+    mapping = {
+        1: "🚚 Free Shipping",
+        2: "📦 Buyer Pays"
+    }
+    return mapping.get(shipping_payer_id, "")
+
+
+def auto_categorize(title):
+    title_lower = title.lower()
+    if re.search(r"まとめ売り|セット|大量", title_lower):
+        return "Bulk Lot"
+    if re.search(r"スタジアム|ベイスタジアム", title_lower):
+        return "Stadium"
+    if re.search(r"ランチャー|グリップ|ワインダー", title_lower):
+        return "Launcher"
+    return "Individual Bey"
+
+
+def check_is_auction(item):
+    item_type = getattr(item, "item_type", "") or ""
+    is_no_price = getattr(item, "is_no_price", False)
+    title = getattr(item, "name", "") or ""
+    if "auction" in item_type.lower():
+        return True
+    if is_no_price:
+        return True
+    if "オークション" in title:
+        return True
+    return False
+
+
+def parse_item(item):
+    item_id = getattr(item, "id_", None) or getattr(item, "id", None)
+    title = getattr(item, "name", "")
+    
+    # Resolve condition
+    cond_id = getattr(item, "item_condition_id", None)
+    if cond_id is None:
+        cond_obj = getattr(item, "item_condition", None)
+        if cond_obj is not None:
+            cond_id = getattr(cond_obj, "id_", None)
+    
+    # Resolve shipping
+    ship_id = getattr(item, "shipping_payer_id", None)
+    if ship_id is None:
+        ship_obj = getattr(item, "shipping_payer", None)
+        if ship_obj is not None:
+            ship_id = getattr(ship_obj, "id_", None)
+            
+    # Resolve status
+    status = getattr(item, "status", None)
+    status_str = str(status).lower() if status is not None else "on_sale"
+    normalized_status = "sold" if ("sold" in status_str or "trading" in status_str) else "on_sale"
+    
+    # Price
+    price = getattr(item, "price", 0)
+    
+    # Image
+    image = ""
+    thumbnails = getattr(item, "thumbnails", [])
+    if thumbnails:
+        image = thumbnails[0]
+    else:
+        photos = getattr(item, "photos", [])
+        if photos:
+            image = photos[0]
+
+    return {
+        "id": item_id,
+        "title": title,
+        "url": f"https://jp.mercari.com/item/{item_id}",
+        "image": image,
+        "price": price,
+        "status": normalized_status,
+        "condition": resolve_condition(cond_id),
+        "shipping": resolve_shipping(ship_id),
+        "is_auction": check_is_auction(item),
+        "category": auto_categorize(title)
+    }
+
+
 async def _run_single_query(m, query, status_filter):
     """Run one search query across up to MAX_PAGES pages."""
     keyword = query["keyword"]
     categories = query.get("categories", [])
     brands = query.get("brands", [])
+    filter_auctions = _load_filter_auctions_config()
 
     items = []
     page_token = None
@@ -91,19 +199,16 @@ async def _run_single_query(m, query, status_filter):
         print(f"  [+] Page {page_num}: {len(page_items)} items")
 
         for item in page_items:
-            status = getattr(item, "status", None)
-            status_str = str(status).lower() if status is not None else ""
-            if "sold" in status_str or "trading" in status_str:
+            # Parse item metadata
+            parsed = parse_item(item)
+
+            if parsed["status"] == "sold":
                 continue
 
-            item_id = getattr(item, "id_", None) or getattr(item, "id", None)
-            items.append({
-                "id": item_id,
-                "title": item.name,
-                "url": f"https://jp.mercari.com/item/{item_id}",
-                "image": item.thumbnails[0] if item.thumbnails else "",
-                "price": item.price,
-            })
+            if filter_auctions and parsed["is_auction"]:
+                continue
+
+            items.append(parsed)
 
         page_token = _find_next_page_token(results)
         if not page_token or not page_items:
@@ -156,6 +261,34 @@ def fetch_listings():
     print("=" * 60)
 
     return items
+
+
+async def fetch_items_status_async(item_ids):
+    m = Mercapi()
+    
+    async def fetch_one(item_id):
+        try:
+            item = await m.item(item_id)
+            if item is None:
+                return None
+            return parse_item(item)
+        except Exception as e:
+            print(f"[!] Failed to fetch item {item_id}: {e}")
+            return None
+
+    tasks = [fetch_one(item_id) for item_id in item_ids]
+    results = await asyncio.gather(*tasks)
+    return [r for r in results if r is not None]
+
+
+def fetch_items_status(item_ids):
+    if not item_ids:
+        return []
+    try:
+        return asyncio.run(fetch_items_status_async(item_ids))
+    except Exception as e:
+        print(f"[!] Failed to fetch items status: {e}")
+        return []
 
 
 if __name__ == "__main__":
