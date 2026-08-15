@@ -7990,7 +7990,7 @@
     "title": "\u3010\u672c\u65e5\u9650\u5b9a\u4fa1\u683c\u3011\u30b5\u30e0\u30e9\u30a4\u30da\u30ac\u30b7\u30b9\u3000\u524a\u9664\u3042\u308a"
   },
   "m20895585504": {
-    "status": "on_sale",
+    "status": "sold",
     "price": 80000,
     "title": "\u30d9\u30a4\u30d6\u30ec\u30fc\u30c9 \u5927\u91cf\u307e\u3068\u3081\u58f2\u308a \u30d1\u30fc\u30c4\u30bb\u30c3\u30c8"
   },
@@ -7998,5 +7998,10 @@
     "status": "on_sale",
     "price": 1700,
     "title": "\u30d0\u30fc\u30f3\u30a8\u30b9\u30b3\u30eb\u30d4\u30aa100RF 2\u500b\u30bb\u30c3\u30c8 \u30e1\u30bf\u30eb\u30d5\u30a1\u30a4\u30c8\u30d9\u30a4\u30d6\u30ec\u30fc\u30c9"
+  },
+  "m42539799571": {
+    "status": "on_sale",
+    "price": 1280,
+    "title": "\u8cb4\u91cd \u30ec\u30a2 \u30e1\u30bf\u30eb\u30d5\u30a1\u30a4\u30c8 \u30d9\u30a4\u30d6\u30ec\u30fc\u30c9 \u30e9\u30f3\u30c1\u30e3\u30fc"
   }
 }
