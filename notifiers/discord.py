@@ -42,6 +42,7 @@ def notify(webhook_config, item, price_tiers=None):
 
     status = item.get("status", "on_sale")
     price = item.get("price", 0)
+    old_price = item.get("old_price")
     category = item.get("category", "Individual Bey")
     condition = item.get("condition", "")
     shipping = item.get("shipping", "")
@@ -76,6 +77,9 @@ def notify(webhook_config, item, price_tiers=None):
     if status == "sold":
         display_title = f"🔴 SOLD: {display_title}"
         embed_color = 15158332  # 0xE74C3C (Red)
+    elif old_price is not None:
+        display_title = f"📉 PRICE DROP: {display_title}"
+        embed_color = 15105570  # 0xE67E22 (Orange)
     else:
         if price <= deals_limit:
             embed_color = 3066993  # 0x2ECC71 (Green)
@@ -86,7 +90,17 @@ def notify(webhook_config, item, price_tiers=None):
 
     inr_rate = get_jpy_to_inr_rate()
     inr_price = int(price * inr_rate)
-    fields = [{"name": "Price", "value": f"¥{price:,} (~₹{inr_price:,})", "inline": True}]
+    
+    if old_price is not None:
+        old_inr_price = int(old_price * inr_rate)
+        drop_percent = int((old_price - price) / old_price * 100)
+        price_value = (
+            f"~~¥{old_price:,}~~ ➡️ **¥{price:,}** (-{drop_percent}%)\n"
+            f"~~₹{old_inr_price:,}~~ ➡️ **₹{inr_price:,}**"
+        )
+        fields = [{"name": "Price Drop", "value": price_value, "inline": True}]
+    else:
+        fields = [{"name": "Price", "value": f"¥{price:,} (~₹{inr_price:,})", "inline": True}]
     
     if condition:
         fields.append({"name": "Condition", "value": condition, "inline": True})

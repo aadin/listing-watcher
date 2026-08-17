@@ -71,6 +71,24 @@ for item in new_items:
         }
         changed = True
         notify(webhooks_cfg, item, price_tiers=price_tiers)
+    else:
+        old_details = seen[item_id]
+        if old_details.get("status") == "on_sale":
+            old_price = old_details.get("price")
+            new_price = item.get("price")
+            if old_price is not None and new_price is not None:
+                if new_price < old_price:
+                    print(f"[!] Price drop for item {item_id} (search): ¥{old_price} -> ¥{new_price} ({item['title']})")
+                    item["old_price"] = old_price
+                    notify(webhooks_cfg, item, price_tiers=price_tiers)
+                    seen[item_id]["price"] = new_price
+                    changed = True
+                elif new_price > old_price:
+                    seen[item_id]["price"] = new_price
+                    changed = True
+            elif new_price is not None:
+                seen[item_id]["price"] = new_price
+                changed = True
 
 # 2. Check previously active items for sold status
 active_ids = [item_id for item_id, details in seen.items() if details.get("status") == "on_sale"]
@@ -92,6 +110,23 @@ if active_ids_to_check:
             print(f"[#] Item {item_id} was removed/deleted.")
             seen[item_id]["status"] = "removed"
             changed = True
+        elif updated_item["status"] == "on_sale" and old_details.get("status") == "on_sale":
+            old_price = old_details.get("price")
+            new_price = updated_item.get("price")
+            if old_price is not None and new_price is not None:
+                if new_price < old_price:
+                    print(f"[!] Price drop for item {item_id}: ¥{old_price} -> ¥{new_price} ({updated_item['title']})")
+                    updated_item["old_price"] = old_price
+                    notify(webhooks_cfg, updated_item, price_tiers=price_tiers)
+                    seen[item_id]["price"] = new_price
+                    changed = True
+                elif new_price > old_price:
+                    print(f"[#] Price increased for item {item_id}: ¥{old_price} -> ¥{new_price} ({updated_item['title']})")
+                    seen[item_id]["price"] = new_price
+                    changed = True
+            elif new_price is not None:
+                seen[item_id]["price"] = new_price
+                changed = True
 
 # Save updated seen state
 if changed:
