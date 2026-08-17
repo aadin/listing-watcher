@@ -588,7 +588,7 @@
   },
   "m94310369505": {
     "status": "on_sale",
-    "price": 4200
+    "price": 4100
   },
   "m24623757180": {
     "status": "on_sale"
@@ -1078,7 +1078,8 @@
     "status": "on_sale"
   },
   "m35468162121": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "price": 4500
   },
   "m93802868145": {
     "status": "on_sale"
@@ -1588,7 +1589,7 @@
   },
   "m24459471154": {
     "status": "on_sale",
-    "price": 9300
+    "price": 9000
   },
   "m79294723990": {
     "status": "on_sale"
@@ -2666,7 +2667,7 @@
   },
   "m60619474090": {
     "status": "on_sale",
-    "price": 12300
+    "price": 12000
   },
   "m73580732804": {
     "status": "on_sale"
@@ -3580,7 +3581,7 @@
   },
   "m60683933434": {
     "status": "on_sale",
-    "price": 14500
+    "price": 14000
   },
   "m55725494034": {
     "status": "on_sale",
