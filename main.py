@@ -2,6 +2,7 @@ import os
 import json
 import sys
 import subprocess
+import time
 
 # Auto-install missing packages on server
 required_packages = ["requests", "mercapi", "beautifulsoup4", "deep-translator"]
@@ -67,7 +68,8 @@ for item in new_items:
         seen[item_id] = {
             "status": "on_sale",
             "price": item["price"],
-            "title": item["title"]
+            "title": item["title"],
+            "last_checked": int(time.time())
         }
         changed = True
         notify(webhooks_cfg, item, price_tiers=price_tiers)
@@ -82,25 +84,40 @@ for item in new_items:
                     item["old_price"] = old_price
                     notify(webhooks_cfg, item, price_tiers=price_tiers)
                     seen[item_id]["price"] = new_price
+                    seen[item_id]["last_checked"] = int(time.time())
                     changed = True
                 elif new_price > old_price:
                     seen[item_id]["price"] = new_price
+                    seen[item_id]["last_checked"] = int(time.time())
                     changed = True
             elif new_price is not None:
                 seen[item_id]["price"] = new_price
+                seen[item_id]["last_checked"] = int(time.time())
                 changed = True
 
 # 2. Check previously active items for sold status
-active_ids = [item_id for item_id, details in seen.items() if details.get("status") == "on_sale"]
-# Limit checks to the 100 most recent active listings to optimize performance
-active_ids_to_check = active_ids[-100:]
+active_items = [(item_id, details) for item_id, details in seen.items() if details.get("status") == "on_sale"]
+# Sort active items by their last_checked timestamp (oldest/missing first) to check in round-robin fashion
+active_items.sort(key=lambda x: x[1].get("last_checked", 0))
+active_ids_to_check = [item_id for item_id, _ in active_items[:100]]
 
 if active_ids_to_check:
     print(f"\nChecking status of {len(active_ids_to_check)} active items...")
+    
+    # Mark them as checked at current time to push them to the back of the queue
+    current_time = int(time.time())
+    for item_id in active_ids_to_check:
+        seen[item_id]["last_checked"] = current_time
+    changed = True
+
     status_updates = fetch_items_status(active_ids_to_check)
     for updated_item in status_updates:
         item_id = updated_item["id"]
         old_details = seen.get(item_id, {})
+        # Safety check: only update if item is still in seen
+        if item_id not in seen:
+            continue
+            
         if updated_item["status"] == "sold" and old_details.get("status") == "on_sale":
             print(f"[!] Item {item_id} sold: {updated_item['title']}")
             notify(webhooks_cfg, updated_item, price_tiers=price_tiers)

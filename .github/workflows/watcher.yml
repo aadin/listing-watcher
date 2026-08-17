@@ -1,7 +1,5 @@
 name: Listing Watcher
 on:
-  schedule:
-    - cron: "*/10 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
