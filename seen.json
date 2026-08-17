@@ -2243,316 +2243,455 @@
     "last_checked": 1787006751
   },
   "m84434937942": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m65264002219": {
     "status": "on_sale",
-    "price": 1570
+    "price": 1570,
+    "last_checked": 1787007686
   },
   "m63832638982": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 9800
   },
   "m69065493004": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m42731670424": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 14000
   },
   "m56611006724": {
     "status": "on_sale",
-    "price": 1000
+    "price": 1000,
+    "last_checked": 1787007686
   },
   "m48231755766": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 16500
   },
   "m70897386215": {
     "status": "on_sale",
-    "price": 8800
+    "price": 8800,
+    "last_checked": 1787007686
   },
   "m57245980442": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m19464906374": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 10000
   },
   "m30652144413": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m85328762520": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 710
   },
   "m33745116571": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1666
   },
   "m39149939490": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1100
   },
   "m67083298169": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m24459471154": {
     "status": "on_sale",
-    "price": 9000
+    "price": 9000,
+    "last_checked": 1787007686
   },
   "m79294723990": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m86269087558": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m32947395227": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 5499
   },
   "m59954014416": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1900
   },
   "m84654021576": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m73280522056": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 5280
   },
   "m57780351459": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m83781797306": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1300
   },
   "m24921644486": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 12999
   },
   "m70786204084": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 300
   },
   "m97033469385": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m25937981306": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 9999
   },
   "m21540604071": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1700
   },
   "m71388161678": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 2980
   },
   "m81148376217": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 8000
   },
   "m58154360801": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 64500
   },
   "m31093312140": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 850
   },
   "m97406998580": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 2800
   },
   "m10384190250": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1300
   },
   "m65620980483": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 6400
   },
   "m24846313825": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m52857005506": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m89893806346": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m65619561912": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m97289227559": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 6800
   },
   "m98622901698": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m88226048449": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m93039575752": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m82267708080": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m89923202337": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 800
   },
   "m18942319270": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1333
   },
   "m30583639868": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 12222
   },
   "2JUspqJaZtRvvT7nuiRLPD": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m22428909838": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 5500
   },
   "m48032555830": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m20119297385": {
     "status": "on_sale",
-    "price": 3299
+    "price": 3299,
+    "last_checked": 1787007686
   },
   "m60465222281": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m79299770978": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m14236760852": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 5300
   },
   "m10597811571": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m10905190293": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 7300
   },
   "m71457532725": {
     "status": "on_sale",
-    "price": 1980
+    "price": 1980,
+    "last_checked": 1787007686
   },
   "m16908766399": {
     "status": "on_sale",
-    "price": 9200
+    "price": 9200,
+    "last_checked": 1787007686
   },
   "m35120649395": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m82766504676": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m12855295923": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 799
   },
   "m51034469961": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m85604566389": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m55573544413": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1880
   },
   "m61390886954": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m85743778339": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m67474846665": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m69762647403": {
     "status": "on_sale",
-    "price": 2300
+    "price": 2300,
+    "last_checked": 1787007686
   },
   "m44104893008": {
     "status": "on_sale",
-    "price": 3500
+    "price": 3500,
+    "last_checked": 1787007686
   },
   "2JJRHoMohUAgedpMrQzPAM": {
-    "status": "on_sale",
-    "price": 2880
+    "status": "removed",
+    "price": 2880,
+    "last_checked": 1787007686
   },
   "m72989298417": {
     "status": "on_sale",
-    "price": 777
+    "price": 777,
+    "last_checked": 1787007686
   },
   "m39145811165": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m41621412924": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "2JUN6EKMaUbTSA78mrCswv": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m29844620656": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m56578092149": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m38904710384": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m10795253014": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m22863950666": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m19525499873": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m57063180933": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m70353279964": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 5000
   },
   "m64978001979": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m41484043937": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 5680
   },
   "m37571729132": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m17071300297": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m12781789059": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 12500
   },
   "m43266549006": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m94536735811": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m53188124996": {
     "status": "on_sale",
-    "price": 3980
+    "price": 3980,
+    "last_checked": 1787007686
   },
   "m17507725764": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m68493871533": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 9500
   },
   "m82468945516": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 14800
   },
   "m42839626402": {
-    "status": "on_sale"
+    "status": "sold",
+    "last_checked": 1787007686
   },
   "m51116857436": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 1400
   },
   "m60330964067": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 10999
   },
   "m45767659836": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m38192102215": {
-    "status": "on_sale"
+    "status": "on_sale",
+    "last_checked": 1787007686,
+    "price": 2400
   },
   "m54455015474": {
-    "status": "on_sale"
+    "status": "removed",
+    "last_checked": 1787007686
   },
   "m45671619840": {
     "status": "on_sale"
