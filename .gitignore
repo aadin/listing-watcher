@@ -1,0 +1,22 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python caching
+__pycache__/
+notifiers/__pycache__/
+sources/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local run / scraped data
+listings.json
+debug.html
+main.zip
+
+# OS files
+.DS_Store
+Thumbs.db
