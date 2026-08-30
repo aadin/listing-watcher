@@ -157,6 +157,13 @@ def parse_item(item):
         if photos:
             image = photos[0]
 
+    # Seller
+    seller_id = getattr(item, "seller_id", None)
+    if seller_id is None:
+        seller_obj = getattr(item, "seller", None)
+        if seller_obj is not None:
+            seller_id = getattr(seller_obj, "id_", None) or getattr(seller_obj, "id", None)
+
     return {
         "id": item_id,
         "title": title,
@@ -166,6 +173,7 @@ def parse_item(item):
         "status": normalized_status,
         "condition": resolve_condition(cond_id),
         "shipping": resolve_shipping(ship_id),
+        "seller_id": seller_id,
         "is_auction": check_is_auction(item),
         "category": auto_categorize(title)
     }
