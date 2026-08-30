@@ -99,34 +99,36 @@ for item in new_items:
 active_items = [(item_id, details) for item_id, details in seen.items() if details.get("status") == "on_sale"]
 # Sort active items by their last_checked timestamp (oldest/missing first) to check in round-robin fashion
 active_items.sort(key=lambda x: x[1].get("last_checked", 0))
-active_ids_to_check = [item_id for item_id, _ in active_items[:100]]
+active_ids_to_check = [item_id for item_id, _ in active_items[:300]]
 
 if active_ids_to_check:
     print(f"\nChecking status of {len(active_ids_to_check)} active items...")
-    
-    # Mark them as checked at current time to push them to the back of the queue
     current_time = int(time.time())
-    for item_id in active_ids_to_check:
-        seen[item_id]["last_checked"] = current_time
-    changed = True
 
     status_updates = fetch_items_status(active_ids_to_check)
     for updated_item in status_updates:
         item_id = updated_item["id"]
         old_details = seen.get(item_id, {})
-        # Safety check: only update if item is still in seen
         if item_id not in seen:
             continue
-            
+
+        # Skip items that failed to fetch so they get retried in future runs
+        if updated_item.get("status") == "error":
+            continue
+
+        # Mark item as checked now that we got a valid response
+        seen[item_id]["last_checked"] = current_time
+        if updated_item.get("title") and not old_details.get("title"):
+            seen[item_id]["title"] = updated_item["title"]
+        changed = True
+
         if updated_item["status"] == "sold" and old_details.get("status") == "on_sale":
             print(f"[!] Item {item_id} sold: {updated_item['title']}")
             notify(webhooks_cfg, updated_item, price_tiers=price_tiers)
             seen[item_id]["status"] = "sold"
-            changed = True
         elif updated_item["status"] == "removed" and old_details.get("status") == "on_sale":
             print(f"[#] Item {item_id} was removed/deleted.")
             seen[item_id]["status"] = "removed"
-            changed = True
         elif updated_item["status"] == "on_sale" and old_details.get("status") == "on_sale":
             old_price = old_details.get("price")
             new_price = updated_item.get("price")
@@ -136,14 +138,23 @@ if active_ids_to_check:
                     updated_item["old_price"] = old_price
                     notify(webhooks_cfg, updated_item, price_tiers=price_tiers)
                     seen[item_id]["price"] = new_price
-                    changed = True
                 elif new_price > old_price:
                     print(f"[#] Price increased for item {item_id}: ¥{old_price} -> ¥{new_price} ({updated_item['title']})")
                     seen[item_id]["price"] = new_price
-                    changed = True
             elif new_price is not None:
                 seen[item_id]["price"] = new_price
-                changed = True
+
+# 3. Prune old sold/removed entries older than 7 days
+seven_days_ago = int(time.time()) - (7 * 86400)
+to_prune = [
+    item_id for item_id, details in seen.items()
+    if details.get("status") in ("sold", "removed") and details.get("last_checked", 0) < seven_days_ago
+]
+if to_prune:
+    print(f"\nPruning {len(to_prune)} old sold/removed items (>7 days old)...")
+    for item_id in to_prune:
+        del seen[item_id]
+    changed = True
 
 # Save updated seen state
 if changed:

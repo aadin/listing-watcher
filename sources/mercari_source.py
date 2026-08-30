@@ -265,24 +265,26 @@ def fetch_listings():
 
 async def fetch_items_status_async(item_ids):
     m = Mercapi()
+    semaphore = asyncio.Semaphore(10)
     
     async def fetch_one(item_id):
-        try:
-            item = await m.item(item_id)
-            if item is None:
-                return {"id": item_id, "status": "removed", "title": ""}
-            return parse_item(item)
-        except Exception as e:
-            # Handle deleted or invisible items (InvisibleItemException causes KeyError: 'data')
-            if isinstance(e, KeyError) and "data" in str(e):
-                return {"id": item_id, "status": "removed", "title": ""}
-            
-            print(f"[!] Failed to fetch item {item_id}: {e}")
-            return None
+        async with semaphore:
+            try:
+                item = await m.item(item_id)
+                if item is None:
+                    return {"id": item_id, "status": "removed", "title": ""}
+                return parse_item(item)
+            except Exception as e:
+                # Handle deleted or invisible items (InvisibleItemException causes KeyError: 'data')
+                if isinstance(e, KeyError) and "data" in str(e):
+                    return {"id": item_id, "status": "removed", "title": ""}
+                
+                print(f"[!] Failed to fetch item {item_id}: {e}")
+                return {"id": item_id, "status": "error", "title": ""}
 
     tasks = [fetch_one(item_id) for item_id in item_ids]
     results = await asyncio.gather(*tasks)
-    return [r for r in results if r is not None]
+    return results
 
 
 def fetch_items_status(item_ids):
