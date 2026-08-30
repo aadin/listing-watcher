@@ -4,19 +4,24 @@ import sys
 import subprocess
 import time
 
+sys.stdout.reconfigure(encoding='utf-8')
+
 # Auto-install missing packages on server
 required_packages = ["requests", "mercapi", "beautifulsoup4", "deep-translator"]
 for package in required_packages:
     try:
         __import__(package)
     except ImportError:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "--user", package])
+        try:
+            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+        except Exception:
+            pass
 
 from sources.mercari_source import fetch_listings, fetch_items_status
 from notifiers.discord import notify
 
 # Load config
-with open("config.json", "r") as f:
+with open("config.json", "r", encoding="utf-8") as f:
     cfg = json.load(f)
 
 # Resolve webhooks config
@@ -46,7 +51,7 @@ if not webhooks_cfg.get("default"):
 seen = {}
 if os.path.exists("seen.json"):
     try:
-        with open("seen.json", "r") as f:
+        with open("seen.json", "r", encoding="utf-8") as f:
             raw_seen = json.load(f)
         if isinstance(raw_seen, list):
             # Upgrade old list to dictionary format
@@ -158,7 +163,7 @@ if to_prune:
 
 # Save updated seen state
 if changed:
-    with open("seen.json", "w") as f:
-        json.dump(seen, f, indent=2)
+    with open("seen.json", "w", encoding="utf-8") as f:
+        json.dump(seen, f, indent=2, ensure_ascii=False)
 
 print("\nDone")

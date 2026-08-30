@@ -217,8 +217,11 @@ async def _run_single_query(m, query, status_filter):
     return items
 
 
+import httpx
+
 async def _fetch():
     m = Mercapi()
+    m._client = httpx.AsyncClient(verify=False)
     status_filter = _on_sale_status_filter()
 
     seen_ids = set()
@@ -265,6 +268,7 @@ def fetch_listings():
 
 async def fetch_items_status_async(item_ids):
     m = Mercapi()
+    m._client = httpx.AsyncClient(verify=False)
     semaphore = asyncio.Semaphore(10)
     
     async def fetch_one(item_id):
