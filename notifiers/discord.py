@@ -1,13 +1,50 @@
 import requests
-from deep_translator import GoogleTranslator
+import urllib3
+from deep_translator import GoogleTranslator, MyMemoryTranslator
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Monkeypatch requests Session.request to bypass SSL verification for translation calls
+_orig_session_request = requests.Session.request
+
+def _ssl_fallback_request(self, method, url, **kwargs):
+    if "verify" not in kwargs:
+        kwargs["verify"] = False
+    return _orig_session_request(self, method, url, **kwargs)
+
+_translation_cache = {}
 
 def translate_title(text):
-    try:
-        return GoogleTranslator(source="ja", target="en").translate(text)
-    except Exception as e:
-        print(f"[!] Translation failed: {e}")
+    if not text or not text.strip():
         return None
+
+    text = text.strip()
+    if text in _translation_cache:
+        return _translation_cache[text]
+
+    requests.Session.request = _ssl_fallback_request
+    translated = None
+
+    # 1. Primary: GoogleTranslator
+    try:
+        translated = GoogleTranslator(source="ja", target="en").translate(text)
+    except Exception as e:
+        pass
+
+    # 2. Fallback: MyMemoryTranslator
+    if not translated or translated.strip().lower() == text.lower():
+        try:
+            translated = MyMemoryTranslator(source="ja-JP", target="en-US").translate(text)
+        except Exception as e:
+            pass
+
+    requests.Session.request = _orig_session_request
+
+    if translated and translated.strip():
+        _translation_cache[text] = translated.strip()
+        return translated.strip()
+
+    return None
 
 
 # Cache the exchange rate to avoid making API requests for every single item in a run

@@ -7,13 +7,18 @@ import time
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Auto-install missing packages on server
-required_packages = ["requests", "mercapi", "beautifulsoup4", "deep-translator"]
-for package in required_packages:
+package_imports = {
+    "requests": "requests",
+    "mercapi": "mercapi",
+    "beautifulsoup4": "bs4",
+    "deep-translator": "deep_translator"
+}
+for pkg, mod in package_imports.items():
     try:
-        __import__(package)
+        __import__(mod)
     except ImportError:
         try:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+            subprocess.check_call([sys.executable, "-m", "pip", "install", pkg])
         except Exception:
             pass
 
