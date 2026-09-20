@@ -85,7 +85,9 @@ def notify(webhook_config, item, price_tiers=None):
     shipping = item.get("shipping", "")
 
     if isinstance(webhook_config, dict):
-        if status == "sold":
+        if item.get("source") == "amazon" and webhook_config.get("amazon"):
+            webhook_url = webhook_config.get("amazon")
+        elif status == "sold":
             webhook_url = webhook_config.get("sold") or webhook_config.get("default")
         else:
             if price <= deals_limit:

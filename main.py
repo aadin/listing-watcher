@@ -11,7 +11,8 @@ package_imports = {
     "requests": "requests",
     "mercapi": "mercapi",
     "beautifulsoup4": "bs4",
-    "deep-translator": "deep_translator"
+    "deep-translator": "deep_translator",
+    "playwright": "playwright"
 }
 for pkg, mod in package_imports.items():
     try:
@@ -23,6 +24,7 @@ for pkg, mod in package_imports.items():
             pass
 
 from sources.mercari_source import fetch_listings, fetch_items_status
+from sources.amazon_source import fetch_amazon_listings
 from notifiers.discord import notify
 
 # Load config
@@ -40,7 +42,8 @@ env_vars = {
     "sold": "DISCORD_WEBHOOK_SOLD",
     "deals": "DISCORD_WEBHOOK_DEALS",
     "mid_range": "DISCORD_WEBHOOK_MID_RANGE",
-    "premium": "DISCORD_WEBHOOK_PREMIUM"
+    "premium": "DISCORD_WEBHOOK_PREMIUM",
+    "amazon": "DISCORD_WEBHOOK_AMAZON"
 }
 
 for key, env_name in env_vars.items():
@@ -87,13 +90,19 @@ price_tiers = cfg.get("price_tiers", {})
 # 1. Fetch and process new listings
 print("\nFetching new listings...")
 new_items = fetch_listings()
+
+# Fetch Amazon watchlist listings
+amazon_items = fetch_amazon_listings()
+if amazon_items:
+    new_items.extend(amazon_items)
+
 current_time = int(time.time())
 
 for item in new_items:
     item_id = item["id"]
     if item_id not in seen:
         seen[item_id] = {
-            "status": "on_sale",
+            "status": item.get("status", "on_sale"),
             "price": item["price"],
             "title": item["title"],
             "condition": item.get("condition", ""),
@@ -113,25 +122,43 @@ for item in new_items:
             changed = True
 
         if old_details.get("status") == "on_sale":
-            old_price = old_details.get("price")
-            new_price = item.get("price")
-            if old_price is not None and new_price is not None:
-                if new_price < old_price:
-                    print(f"[!] Price drop for item {item_id} (search): ¥{old_price} -> ¥{new_price} ({item['title']})")
-                    item["old_price"] = old_price
-                    notify(webhooks_cfg, item, price_tiers=price_tiers)
-                    seen[item_id]["price"] = new_price
-                    seen[item_id]["last_checked"] = current_time
-                    seen[item_id].setdefault("price_history", []).append({"price": new_price, "timestamp": current_time})
-                    changed = True
-                elif new_price > old_price:
-                    seen[item_id]["price"] = new_price
-                    seen[item_id]["last_checked"] = current_time
-                    seen[item_id].setdefault("price_history", []).append({"price": new_price, "timestamp": current_time})
-                    changed = True
+            if item.get("status") == "sold":
+                print(f"[!] Item {item_id} sold/out of stock: {item['title']}")
+                notify(webhooks_cfg, item, price_tiers=price_tiers)
+                seen[item_id]["status"] = "sold"
+                seen[item_id]["last_checked"] = current_time
+                changed = True
+            else:
+                old_price = old_details.get("price")
+                new_price = item.get("price")
+                if old_price is not None and new_price is not None:
+                    if new_price < old_price:
+                        print(f"[!] Price drop for item {item_id}: ¥{old_price} -> ¥{new_price} ({item['title']})")
+                        item["old_price"] = old_price
+                        notify(webhooks_cfg, item, price_tiers=price_tiers)
+                        seen[item_id]["price"] = new_price
+                        seen[item_id]["last_checked"] = current_time
+                        seen[item_id].setdefault("price_history", []).append({"price": new_price, "timestamp": current_time})
+                        changed = True
+                    elif new_price > old_price:
+                        seen[item_id]["price"] = new_price
+                        seen[item_id]["last_checked"] = current_time
+                        seen[item_id].setdefault("price_history", []).append({"price": new_price, "timestamp": current_time})
+                        changed = True
+        elif old_details.get("status") == "sold" and item.get("status") == "on_sale":
+            print(f"[!] Item {item_id} back in stock: {item['title']}")
+            seen[item_id]["status"] = "on_sale"
+            seen[item_id]["price"] = item["price"]
+            seen[item_id]["last_checked"] = current_time
+            seen[item_id].setdefault("price_history", []).append({"price": item["price"], "timestamp": current_time})
+            notify(webhooks_cfg, item, price_tiers=price_tiers)
+            changed = True
 
-# 2. Check previously active items for sold status
-active_items = [(item_id, details) for item_id, details in seen.items() if details.get("status") == "on_sale"]
+# 2. Check previously active items for sold status (Mercari items only)
+active_items = [
+    (item_id, details) for item_id, details in seen.items()
+    if details.get("status") == "on_sale" and not item_id.startswith("amz_")
+]
 # Sort active items by their last_checked timestamp (oldest/missing first) to check in round-robin fashion
 active_items.sort(key=lambda x: x[1].get("last_checked", 0))
 active_ids_to_check = [item_id for item_id, _ in active_items[:300]]

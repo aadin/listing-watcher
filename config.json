@@ -16,5 +16,11 @@
     "deals": "YOUR_DISCORD_WEBHOOK_DEALS",
     "mid_range": "YOUR_DISCORD_WEBHOOK_MID_RANGE",
     "premium": "YOUR_DISCORD_WEBHOOK_PREMIUM"
-  }
+  },
+  "amazon_watchlist": [
+    {
+      "url": "https://www.amazon.co.jp/Takara-BEYBLADE-Beyblade-UX-21-Nether/dp/B0H861Y9Y3",
+      "label": "Beyblade UX-21 Nether Deck Set"
+    }
+  ]
 }
