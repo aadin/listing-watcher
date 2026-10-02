@@ -5,7 +5,6 @@ import sys
 import time
 import urllib3
 from bs4 import BeautifulSoup
-import requests
 
 if sys.stdout and hasattr(sys.stdout, "reconfigure"):
     try:
@@ -24,157 +23,82 @@ HEADERS = {
     "Upgrade-Insecure-Requests": "1"
 }
 
-ASIN_REGEX = re.compile(r"(?:/dp/|/gp/product/|/d/|/asin/)([A-Z0-9]{10})", re.IGNORECASE)
 
-OUT_OF_STOCK_KEYWORDS = [
-    "currently unavailable",
-    "一時的に在庫切れ",
-    "在庫切れ",
-    "この商品は現在お取り扱いできません",
-    "お取り扱いできません"
-]
-
-
-def extract_asin(url_or_id):
-    if not url_or_id:
-        return None
-    # If already an ASIN (10 chars alphanumeric)
-    if re.fullmatch(r"[A-Z0-9]{10}", url_or_id, re.IGNORECASE):
-        return url_or_id.upper()
-    match = ASIN_REGEX.search(url_or_id)
-    if match:
-        return match.group(1).upper()
-    return None
-
-
-def _parse_amazon_html(html, asin, original_url=""):
-    if not html:
-        return None
-
+def parse_search_or_store_page(html):
     soup = BeautifulSoup(html, "html.parser")
+    products = []
+    seen_asins = set()
 
-    # 1. Title
-    title_elem = soup.find(id="productTitle")
-    title = title_elem.get_text(strip=True) if title_elem else ""
+    # 1. Standard Amazon Search Result Cards
+    for card in soup.select("div[data-asin]"):
+        asin = card.get("data-asin", "").strip().upper()
+        if not asin or len(asin) != 10 or asin in seen_asins:
+            continue
 
-    # Detect anti-bot/CAPTCHA
-    if not title:
-        page_title = soup.title.get_text(strip=True) if soup.title else ""
-        if "captcha" in html.lower() or "robot check" in html.lower() or "bot check" in html.lower():
-            print(f"  [!] Amazon CAPTCHA/bot check detected for ASIN {asin}")
-            return None
-        if "Amazon.co.jp" in page_title:
-            title = page_title
+        h2 = card.find("h2")
+        title = h2.get_text(strip=True) if h2 else ""
+        if not title:
+            continue
 
-    # 2. Image
-    image_url = ""
-    img_elem = soup.find(id="landingImage") or soup.select_one("#imgTagWrapperId img") or soup.select_one("#main-image")
-    if img_elem:
-        image_url = img_elem.get("data-old-hires") or img_elem.get("src") or ""
+        # Image
+        img = card.select_one("img.s-image")
+        image_url = img.get("src", "") if img else ""
 
-    # 3. Price
-    price = None
-    price_selectors = [
-        ".priceToPay span.a-price-whole",
-        ".a-price .a-offscreen",
-        "#priceblock_ourprice",
-        "#priceblock_dealprice",
-        "#corePrice_feature_div .a-offscreen",
-        "#corePriceDisplay_desktop_feature_div .a-offscreen",
-        "#apex_desktop .a-price .a-offscreen"
-    ]
-    for sel in price_selectors:
-        for p_elem in soup.select(sel):
-            price_text = p_elem.get_text(strip=True)
-            clean_num = re.sub(r"[^\d]", "", price_text)
-            if clean_num:
-                price = int(clean_num)
-                break
-        if price is not None:
-            break
+        # Price
+        price = None
+        p_elem = card.select_one(".priceToPay span.a-price-whole") or card.select_one(".a-price .a-offscreen") or card.select_one("span.a-price-whole")
+        if p_elem:
+            clean = re.sub(r"[^\d]", "", p_elem.get_text(strip=True))
+            if clean:
+                val = int(clean)
+                if val > 0:
+                    price = val
 
-    # If price not found in standard selectors, search for links targeting this ASIN
-    if price is None:
-        for a in soup.find_all("a", href=True):
-            if asin in a["href"]:
-                p_off = a.select_one(".a-price .a-offscreen")
-                if p_off:
-                    clean_num = re.sub(r"[^\d]", "", p_off.get_text(strip=True))
-                    if clean_num:
-                        price = int(clean_num)
-                        break
+        # Availability & Stock status
+        card_text = card.get_text(separator=" ", strip=True)
+        status = "on_sale"
+        availability = "✅ In Stock"
 
-    # 4. Availability & Status
-    avail_elem = soup.find(id="availability")
-    avail_text = avail_elem.get_text(strip=True) if avail_elem else ""
-
-    is_out_of_stock = False
-    for kw in OUT_OF_STOCK_KEYWORDS:
-        if kw.lower() in avail_text.lower() or kw.lower() in html.lower():
-            is_out_of_stock = True
-            break
-
-    status = "sold" if is_out_of_stock else "on_sale"
-    if price is None and not is_out_of_stock:
-        # Check if there are buying choices / other sellers
-        if soup.find(id="buybox-see-all-buying-choices"):
+        if "発売予定日" in card_text or "予約" in card_text:
+            match = re.search(r"(\d+月\d+日)発売予定", card_text)
+            date_str = f" ({match.group(1)})" if match else ""
+            availability = f"📦 Pre-order{date_str}"
+            status = "on_sale"
+        elif "一時的に在庫切れ" in card_text or "Currently unavailable" in card_text or "在庫切れ" in card_text:
+            availability = "❌ Out of Stock"
+            status = "sold"
+        elif "残り" in card_text and "点" in card_text:
+            match = re.search(r"残り(\d+点)", card_text)
+            qty_str = match.group(1) if match else "few"
+            availability = f"⚠️ Only {qty_str} left"
             status = "on_sale"
 
-    # 5. Seller & Shipping
-    seller = "Amazon.co.jp"
-    merchant_elem = soup.find(id="merchant-info")
-    if merchant_elem:
-        m_text = merchant_elem.get_text(strip=True)
-        if m_text:
-            seller = m_text[:50]
+        canonical_url = f"https://www.amazon.co.jp/dp/{asin}"
 
-    canonical_url = f"https://www.amazon.co.jp/dp/{asin}"
+        products.append({
+            "id": f"amz_{asin}",
+            "title": title,
+            "url": canonical_url,
+            "image": image_url,
+            "price": price,
+            "status": status,
+            "availability": availability,
+            "condition": "🆕 Brand New (Amazon)",
+            "shipping": "🚚 Prime / Amazon JP",
+            "seller_id": "Amazon.co.jp",
+            "is_auction": False,
+            "category": "Amazon Beyblade X",
+            "source": "amazon"
+        })
+        seen_asins.add(asin)
 
-    return {
-        "id": f"amz_{asin}",
-        "title": title or f"Amazon Product {asin}",
-        "url": canonical_url,
-        "image": image_url,
-        "price": price or 0,
-        "status": status,
-        "condition": "🆕 Brand New (Amazon)",
-        "shipping": "🚚 Prime / Amazon JP",
-        "seller_id": seller,
-        "is_auction": False,
-        "category": "Amazon Tracked",
-        "source": "amazon"
-    }
+    return products
 
 
-def _fetch_via_requests(asin):
-    url = f"https://www.amazon.co.jp/dp/{asin}"
-    try:
-        session = requests.Session()
-        cookies = {"i18n-prefs": "JPY", "lc-acbjp": "ja_JP"}
-        r = session.get(url, headers=HEADERS, cookies=cookies, verify=False, timeout=20)
-        if r.status_code == 200:
-            parsed = _parse_amazon_html(r.text, asin, url)
-            if parsed and parsed.get("price", 0) > 0:
-                return parsed
-            # Also try offer listing URL if buybox has no price
-            url_olp = f"https://www.amazon.co.jp/gp/offer-listing/{asin}"
-            r_olp = session.get(url_olp, headers=HEADERS, cookies=cookies, verify=False, timeout=20)
-            if r_olp.status_code == 200:
-                parsed_olp = _parse_amazon_html(r_olp.text, asin, url)
-                if parsed_olp and parsed_olp.get("price", 0) > 0:
-                    if parsed and parsed.get("image"):
-                        parsed_olp["image"] = parsed["image"]
-                    return parsed_olp
-                return parsed
-    except Exception as e:
-        print(f"  [!] Direct HTTP fetch error for {asin}: {e}")
-    return None
-
-
-def _fetch_via_playwright(asin):
+def fetch_amazon_search_query(url, label=""):
     try:
         from playwright.sync_api import sync_playwright
-        url = f"https://www.amazon.co.jp/dp/{asin}"
+        print(f"[Amazon] Fetching store/search: {label or url}...")
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             context = browser.new_context(
@@ -183,30 +107,15 @@ def _fetch_via_playwright(asin):
                 extra_http_headers={"Accept-Language": "ja-JP,ja;q=0.9"}
             )
             page = context.new_page()
-            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            page.goto(url, wait_until="domcontentloaded", timeout=35000)
             html = page.content()
             browser.close()
-            return _parse_amazon_html(html, asin, url)
+            items = parse_search_or_store_page(html)
+            print(f"  [+] Discovered {len(items)} products from {label or url}")
+            return items
     except Exception as e:
-        print(f"  [!] Playwright fetch error for {asin}: {e}")
-        return None
-
-
-def fetch_amazon_item(url_or_asin):
-    asin = extract_asin(url_or_asin)
-    if not asin:
-        print(f"[!] Invalid Amazon URL/ASIN: {url_or_asin}")
-        return None
-
-    # Step 1: Try fast direct HTTP first
-    item = _fetch_via_requests(asin)
-    if item and item.get("price", 0) > 0:
-        return item
-
-    # Step 2: Fallback to Playwright if price missing or blocked
-    print(f"  [*] Falling back to Playwright for ASIN {asin}...")
-    item = _fetch_via_playwright(asin)
-    return item
+        print(f"  [!] Failed to fetch search/store {url}: {e}")
+        return []
 
 
 def fetch_amazon_listings(config_path="config.json"):
@@ -220,16 +129,22 @@ def fetch_amazon_listings(config_path="config.json"):
         print(f"[!] Error loading config in amazon_source: {e}")
         return []
 
-    watchlist = cfg.get("amazon_watchlist", [])
-    if not watchlist:
+    searches = cfg.get("amazon_searches", [])
+    # Backward compatibility if watchlist is still used
+    if not searches and cfg.get("amazon_watchlist"):
+        searches = [{"url": entry.get("url") if isinstance(entry, dict) else str(entry), "label": entry.get("label", "") if isinstance(entry, dict) else ""} for entry in cfg.get("amazon_watchlist", [])]
+
+    if not searches:
         return []
 
     print("\n" + "=" * 60)
-    print(f"Checking {len(watchlist)} Amazon watchlist items...")
+    print(f"Checking {len(searches)} Amazon search/store queries...")
     print("=" * 60)
 
-    results = []
-    for entry in watchlist:
+    seen_ids = set()
+    all_items = []
+
+    for entry in searches:
         if isinstance(entry, dict):
             url = entry.get("url", "")
             label = entry.get("label", "")
@@ -240,20 +155,20 @@ def fetch_amazon_listings(config_path="config.json"):
         if not url:
             continue
 
-        print(f"[Amazon] Checking {label or url}...")
-        item = fetch_amazon_item(url)
-        if item:
-            print(f"  [+] Found: {item['title'][:50]} | ¥{item['price']:,} | Status: {item['status']}")
-            results.append(item)
-        else:
-            print(f"  [-] Failed to fetch Amazon item for {url}")
+        items = fetch_amazon_search_query(url, label=label)
+        for it in items:
+            if it["id"] not in seen_ids:
+                seen_ids.add(it["id"])
+                all_items.append(it)
         time.sleep(1)
 
-    return results
+    print(f"[+] Total unique Amazon products found: {len(all_items)}")
+    print("=" * 60)
+    return all_items
 
 
 if __name__ == "__main__":
     items = fetch_amazon_listings()
     print(f"\nFetched {len(items)} items from Amazon.")
-    for it in items:
-        print(it)
+    for it in items[:10]:
+        print(f"  [{it['id']}] {it['title'][:40]} | ¥{it['price']} | {it['availability']} | Status: {it['status']}")

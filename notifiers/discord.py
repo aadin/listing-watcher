@@ -111,26 +111,34 @@ def notify(webhook_config, item, price_tiers=None):
     # 2. Build rich embed
     original_title = item["title"]
     translated_title = translate_title(original_title)
+    event_type = item.get("event_type")
+    availability = item.get("availability")
     
     display_title = translated_title or original_title
-    if status == "sold":
-        display_title = f"🔴 SOLD: {display_title}"
+    if event_type == "back_in_stock":
+        display_title = f"🟢 BACK IN STOCK: {display_title}"
+        embed_color = 3066993  # 0x2ECC71 (Green)
+    elif event_type == "pre_order":
+        display_title = f"📦 PRE-ORDER OPEN: {display_title}"
+        embed_color = 10181046  # 0x9B59B6 (Purple)
+    elif status == "sold":
+        display_title = f"🔴 SOLD / OUT OF STOCK: {display_title}"
         embed_color = 15158332  # 0xE74C3C (Red)
     elif old_price is not None:
         display_title = f"📉 PRICE DROP: {display_title}"
         embed_color = 15105570  # 0xE67E22 (Orange)
     else:
-        if price <= deals_limit:
+        if price and price <= deals_limit:
             embed_color = 3066993  # 0x2ECC71 (Green)
-        elif price >= premium_start:
+        elif price and price >= premium_start:
             embed_color = 10181046  # 0x9B59B6 (Purple)
         else:
             embed_color = 3447003  # 0x3498DB (Blue)
 
     inr_rate = get_jpy_to_inr_rate()
-    inr_price = int(price * inr_rate)
     
-    if old_price is not None:
+    if old_price is not None and price and price > 0:
+        inr_price = int(price * inr_rate)
         old_inr_price = int(old_price * inr_rate)
         drop_percent = int((old_price - price) / old_price * 100)
         price_value = (
@@ -138,9 +146,14 @@ def notify(webhook_config, item, price_tiers=None):
             f"~~₹{old_inr_price:,}~~ ➡️ **₹{inr_price:,}**"
         )
         fields = [{"name": "Price Drop", "value": price_value, "inline": True}]
-    else:
+    elif price and price > 0:
+        inr_price = int(price * inr_rate)
         fields = [{"name": "Price", "value": f"¥{price:,} (~₹{inr_price:,})", "inline": True}]
+    else:
+        fields = [{"name": "Price", "value": "Check Store", "inline": True}]
     
+    if availability:
+        fields.append({"name": "Availability", "value": availability, "inline": True})
     if condition:
         fields.append({"name": "Condition", "value": condition, "inline": True})
     if shipping:

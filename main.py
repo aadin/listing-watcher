@@ -71,10 +71,10 @@ if os.path.exists("seen.json"):
 
 changed = False
 def enrich_item_metadata(target_dict, source_item, current_time):
-    fields = ("condition", "shipping", "category", "image", "url", "seller_id", "title")
+    fields = ("condition", "shipping", "category", "image", "url", "seller_id", "title", "availability")
     updated = False
     for f in fields:
-        if source_item.get(f) and not target_dict.get(f):
+        if source_item.get(f) and source_item.get(f) != target_dict.get(f):
             target_dict[f] = source_item[f]
             updated = True
     if "price_history" not in target_dict and target_dict.get("price") is not None:
@@ -101,17 +101,19 @@ current_time = int(time.time())
 for item in new_items:
     item_id = item["id"]
     if item_id not in seen:
+        price_val = item.get("price")
         seen[item_id] = {
             "status": item.get("status", "on_sale"),
-            "price": item["price"],
+            "price": price_val,
             "title": item["title"],
             "condition": item.get("condition", ""),
             "shipping": item.get("shipping", ""),
             "category": item.get("category", ""),
+            "availability": item.get("availability", ""),
             "image": item.get("image", ""),
             "url": item.get("url", f"https://jp.mercari.com/item/{item_id}"),
             "seller_id": item.get("seller_id"),
-            "price_history": [{"price": item["price"], "timestamp": current_time}],
+            "price_history": [{"price": price_val, "timestamp": current_time}] if price_val else [],
             "last_checked": current_time
         }
         changed = True
@@ -124,6 +126,7 @@ for item in new_items:
         if old_details.get("status") == "on_sale":
             if item.get("status") == "sold":
                 print(f"[!] Item {item_id} sold/out of stock: {item['title']}")
+                item["event_type"] = "sold"
                 notify(webhooks_cfg, item, price_tiers=price_tiers)
                 seen[item_id]["status"] = "sold"
                 seen[item_id]["last_checked"] = current_time
@@ -131,7 +134,7 @@ for item in new_items:
             else:
                 old_price = old_details.get("price")
                 new_price = item.get("price")
-                if old_price is not None and new_price is not None:
+                if old_price and new_price and old_price > 0 and new_price > 0:
                     if new_price < old_price:
                         print(f"[!] Price drop for item {item_id}: ¥{old_price} -> ¥{new_price} ({item['title']})")
                         item["old_price"] = old_price
@@ -145,12 +148,21 @@ for item in new_items:
                         seen[item_id]["last_checked"] = current_time
                         seen[item_id].setdefault("price_history", []).append({"price": new_price, "timestamp": current_time})
                         changed = True
+                else:
+                    seen[item_id]["last_checked"] = current_time
         elif old_details.get("status") == "sold" and item.get("status") == "on_sale":
+            new_price = item.get("price")
             print(f"[!] Item {item_id} back in stock: {item['title']}")
             seen[item_id]["status"] = "on_sale"
-            seen[item_id]["price"] = item["price"]
+            if "Pre-order" in item.get("availability", ""):
+                item["event_type"] = "pre_order"
+            else:
+                item["event_type"] = "back_in_stock"
+
+            if new_price and new_price > 0:
+                seen[item_id]["price"] = new_price
+                seen[item_id].setdefault("price_history", []).append({"price": new_price, "timestamp": current_time})
             seen[item_id]["last_checked"] = current_time
-            seen[item_id].setdefault("price_history", []).append({"price": item["price"], "timestamp": current_time})
             notify(webhooks_cfg, item, price_tiers=price_tiers)
             changed = True
 
