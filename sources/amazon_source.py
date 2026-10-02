@@ -142,6 +142,8 @@ def fetch_amazon_search_query(url, label=""):
                         "--disable-blink-features=AutomationControlled",
                         "--no-sandbox",
                         "--disable-setuid-sandbox",
+                        "--disable-dev-shm-usage",
+                        "--disable-gpu",
                         "--disable-infobars",
                         "--ignore-certificate-errors"
                     ]
@@ -152,9 +154,6 @@ def fetch_amazon_search_query(url, label=""):
                     viewport={"width": 1920, "height": 1080},
                     extra_http_headers={
                         "Accept-Language": "ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7",
-                        "sec-ch-ua": HEADERS["sec-ch-ua"],
-                        "sec-ch-ua-mobile": "?0",
-                        "sec-ch-ua-platform": '"Windows"',
                         "upgrade-insecure-requests": "1"
                     }
                 )
@@ -166,7 +165,8 @@ def fetch_amazon_search_query(url, label=""):
                 page = context.new_page()
                 page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-                page.goto(url, wait_until="domcontentloaded", timeout=40000)
+                response = page.goto(url, wait_until="domcontentloaded", timeout=40000)
+                status_code = response.status if response else "Unknown"
 
                 try:
                     page.wait_for_selector("div[data-asin]", timeout=12000)
@@ -174,21 +174,40 @@ def fetch_amazon_search_query(url, label=""):
                     pass
 
                 html = page.content()
+                final_url = page.url
+                page_title = page.title()
                 browser.close()
+
+                soup = BeautifulSoup(html, "html.parser")
+                cards = soup.select("div[data-asin]")
+                is_captcha = "captcha" in html.lower() or "robot check" in html.lower() or "api-services-support" in html.lower()
+
+                # Print detailed debug info
+                print(f"  [DEBUG Attempt {attempt}] Status: {status_code} | Title: '{page_title}' | HTML: {len(html)} bytes | URL: {final_url}")
+                print(f"  [DEBUG Attempt {attempt}] data-asin cards found: {len(cards)} | CAPTCHA/Bot check: {is_captcha}")
 
                 items = parse_search_or_store_page(html)
                 if items:
                     print(f"  [+] Discovered {len(items)} products from {label or url}")
                     return items
                 else:
-                    if "captcha" in html.lower() or "robot check" in html.lower():
-                        print(f"  [!] Amazon CAPTCHA encountered on attempt {attempt}.")
+                    if is_captcha:
+                        print(f"  [!] Amazon CAPTCHA/bot check triggered on attempt {attempt}.")
+                    # Save debug HTML for inspection
+                    try:
+                        with open("debug_amazon.html", "w", encoding="utf-8") as f:
+                            f.write(html)
+                        print(f"  [DEBUG] Saved raw response to debug_amazon.html ({len(html)} bytes)")
+                    except Exception:
+                        pass
+
                     if attempt < 2:
                         print("  [*] Retrying with backoff...")
                         time.sleep(3)
         except Exception as e:
             print(f"  [!] Attempt {attempt} error for {url}: {e}")
             if attempt < 2:
+                print("  [*] Retrying with backoff...")
                 time.sleep(3)
 
     print(f"  [-] Failed to extract products from {url}")
