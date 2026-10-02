@@ -90,12 +90,14 @@ def notify(webhook_config, item, price_tiers=None):
         elif status == "sold":
             webhook_url = webhook_config.get("sold") or webhook_config.get("default")
         else:
-            if price <= deals_limit:
+            if price is not None and price <= deals_limit:
                 webhook_url = webhook_config.get("deals")
-            elif price >= premium_start:
+            elif price is not None and price >= premium_start:
                 webhook_url = webhook_config.get("premium")
-            else:
+            elif price is not None:
                 webhook_url = webhook_config.get("mid_range")
+            else:
+                webhook_url = webhook_config.get("default")
             
             # Fall back to default
             if not webhook_url:
