@@ -7,9 +7,9 @@
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m43650334872_1.jpg?1783926518",
+    "image": "https://static.mercdn.net/thumb/item/webp/m43650334872_1.jpg?1783926518",
     "url": "https://jp.mercari.com/item/m43650334872",
-    "seller_id": 135896370,
+    "seller_id": "135896370",
     "price_history": [
       {
         "price": 488,
@@ -31,7 +31,7 @@
   },
   "m32061993487": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 2300,
     "title": "グリフサラマンダE230Bシンクローム　メタルファイトベイブレードゼロG",
     "condition": "📦 Excellent",
@@ -65,7 +65,7 @@
   },
   "m45245720788": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 1777,
     "title": "メタルファイトベイブレード　フレイムビクシス",
     "condition": "📦 Excellent",
@@ -283,9 +283,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m51072511629_1.jpg?1783707477",
+    "image": "https://static.mercdn.net/thumb/item/webp/m51072511629_1.jpg?1783707477",
     "url": "https://jp.mercari.com/item/m51072511629",
-    "seller_id": 313251127,
+    "seller_id": "313251127",
     "price_history": [
       {
         "price": 45200,
@@ -451,7 +451,7 @@
   },
   "m37953354406": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 2500,
     "title": "メタルファイトベイブレード　ライトニングエルドラゴ極龍Ｖｅｒ．",
     "condition": "📦 Fair",
@@ -469,7 +469,7 @@
   },
   "m25674347892": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 66444,
     "title": "ベイブレード ランダムブースター vol.8 まとめ売り　ジェイドジュピター",
     "condition": "📦 Fair",
@@ -647,7 +647,7 @@
   },
   "m63875932034": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 7000,
     "title": "メタルファイト　ベイブレード　マーキュリーアヌビウス",
     "condition": "✨ Like New",
@@ -789,7 +789,7 @@
   },
   "m42704040540": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 4444,
     "title": "【希少シール5枚】メタルファイトベイブレード ダークヴォルフDF145FS",
     "condition": "📦 Very Good",
@@ -807,7 +807,7 @@
   },
   "m70631896486": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 15080,
     "title": "メタルファイト ベイブレード　看板　ポップアップパネル",
     "condition": "📦 Very Good",
@@ -833,7 +833,7 @@
   },
   "m45221526679": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 600,
     "title": "フェイスシールのみ ランダムブースター メタルファイトベイブレード フレイムブル",
     "condition": "📦 Very Good",
@@ -851,7 +851,7 @@
   },
   "m84219966609": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 999,
     "title": "BEYBLADE X カプセルシューター4 インパクトドレイクガチャガチャ",
     "condition": "🆕 Brand New/Unused",
@@ -870,14 +870,14 @@
   "m52350614766": {
     "status": "on_sale",
     "price": 5700,
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "title": "ユニコルノ クリアウィール青 WBBA特別景品 メタルファイトベイブレード",
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m52350614766_1.jpg?1782991250",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m52350614766_1.jpg?1782991250",
     "url": "https://jp.mercari.com/item/m52350614766",
-    "seller_id": "483763296",
+    "seller_id": 483763296,
     "price_history": [
       {
         "price": 6350,
@@ -917,7 +917,7 @@
   },
   "m43942676376": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 1499,
     "title": "メタルファイトベイブレード　コマ　2点セット",
     "condition": "📦 Fair",
@@ -1233,7 +1233,7 @@
   },
   "m24552386315": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 19999,
     "title": "メタルファイトベイブレード 7個セット おもちゃ まとめ売り",
     "condition": "📦 Fair",
@@ -1251,7 +1251,7 @@
   },
   "m41394370895": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 7999,
     "title": "BEYBLADE X BX-00 スターター ストームペガシス 3-70RA2個",
     "condition": "🆕 Brand New/Unused",
@@ -1269,7 +1269,7 @@
   },
   "m94794824912": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 3300,
     "title": "BB-12 ヴォルフ 105F　メタルファイトベイブレード",
     "condition": "🆕 Brand New/Unused",
@@ -1291,7 +1291,7 @@
   },
   "m82562119672": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 2499,
     "title": "メタルファイトベイブレード　ストームペガシス　ロックレオーネ　アニメセット",
     "condition": "📦 Very Good",
@@ -1579,7 +1579,7 @@
   },
   "m62374073246": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 1800,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
@@ -1669,7 +1669,7 @@
   },
   "m37762259689": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 300,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
@@ -1687,7 +1687,7 @@
   },
   "m25005434789": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 1800,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
@@ -1705,7 +1705,7 @@
   },
   "m22071750744": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 19800,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
@@ -1723,7 +1723,7 @@
   },
   "m10161879695": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 1500,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
@@ -1759,7 +1759,7 @@
   },
   "m69471406908": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 6900,
     "title": "ケツァルコアトル 劇場版 限定 メタルファイトベイブレード BEYBLADE",
     "condition": "🆕 Brand New/Unused",
@@ -1905,7 +1905,7 @@
   },
   "m49739710170": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 499,
     "title": "ツール メタルファイトベイブレード クリアパープル クリアオレンジ ブラック 1",
     "condition": "📦 Very Good",
@@ -1923,7 +1923,7 @@
   },
   "m63782725493": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 447,
     "title": "メタルファイトベイブレード サイバーアクアリオ メタルウィール",
     "condition": "📦 Excellent",
@@ -2093,7 +2093,7 @@
   },
   "m20752523905": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 1290,
     "title": "BB86ベイブレードデッキ アタック＆ディフェンス・シール★メタルファイト",
     "condition": "📦 Fair",
@@ -2173,9 +2173,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m16389848055_1.jpg?1784173985",
+    "image": "https://static.mercdn.net/thumb/item/webp/m16389848055_1.jpg?1784173985",
     "url": "https://jp.mercari.com/item/m16389848055",
-    "seller_id": 313251127,
+    "seller_id": "313251127",
     "price_history": [
       {
         "price": 30800,
@@ -3728,7 +3728,7 @@
   "m77785922671": {
     "status": "on_sale",
     "price": 599,
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "title": "【初版】メタルファイトベイブレード 第1巻",
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
@@ -4345,7 +4345,7 @@
   },
   "m11649810381": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 2977,
     "title": "バサルトホロギウム145WD メタルファイトベイブレード",
     "condition": "📦 Very Good",
@@ -4371,7 +4371,7 @@
   },
   "m18666650360": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 1000,
     "title": "メタルファイトベイブレード ロックリブラ145WD",
     "condition": "📦 Very Good",
@@ -4833,9 +4833,9 @@
     "condition": "⚠️ Junk/Poor",
     "shipping": "📦 Buyer Pays",
     "category": "Launcher",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m44867135252_1.jpg?1782461086",
+    "image": "https://static.mercdn.net/thumb/item/webp/m44867135252_1.jpg?1782461086",
     "url": "https://jp.mercari.com/item/m44867135252",
-    "seller_id": 282291109,
+    "seller_id": "282291109",
     "price_history": [
       {
         "price": 1700,
@@ -4971,9 +4971,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m90455421536_1.jpg?1780843358",
+    "image": "https://static.mercdn.net/thumb/item/webp/m90455421536_1.jpg?1780843358",
     "url": "https://jp.mercari.com/item/m90455421536",
-    "seller_id": 116537258,
+    "seller_id": "116537258",
     "price_history": [
       {
         "price": 900,
@@ -5523,9 +5523,9 @@
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m90947545498_1.jpg?1783926779",
+    "image": "https://static.mercdn.net/thumb/item/webp/m90947545498_1.jpg?1783926779",
     "url": "https://jp.mercari.com/item/m90947545498",
-    "seller_id": 135896370,
+    "seller_id": "135896370",
     "price_history": [
       {
         "price": 488,
@@ -5912,14 +5912,14 @@
   "m78050716006": {
     "status": "on_sale",
     "price": 4000,
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "title": "ベイブレードデッキ アタック＆ディフェンスタイプセット 〜迎撃逆襲デッキ〜",
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m78050716006_1.jpg?1781882475",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m78050716006_1.jpg?1781882475",
     "url": "https://jp.mercari.com/item/m78050716006",
-    "seller_id": "516231788",
+    "seller_id": 516231788,
     "price_history": [
       {
         "price": 5800,
@@ -6205,9 +6205,9 @@
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m18266820687_1.jpg?1783926615",
+    "image": "https://static.mercdn.net/thumb/item/webp/m18266820687_1.jpg?1783926615",
     "url": "https://jp.mercari.com/item/m18266820687",
-    "seller_id": 135896370,
+    "seller_id": "135896370",
     "price_history": [
       {
         "price": 488,
@@ -6801,7 +6801,7 @@
   },
   "m32829769294": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 1980,
     "title": "wiiで遊ぶメトロイドプライム",
     "condition": "📦 Very Good",
@@ -6819,7 +6819,7 @@
   },
   "m94914877686": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 317,
     "title": "メタルファイトベイブレード メタルウィール バーン",
     "condition": "📦 Excellent",
@@ -6867,7 +6867,7 @@
   },
   "m19508688724": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 3500,
     "title": "サーマルラチェルタ スターター 海外版 メタルファイトベイブレード 4D ゼロジ",
     "condition": "🆕 Brand New/Unused",
@@ -6885,7 +6885,7 @@
   },
   "m59603757763": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 3311,
     "title": "【 美品 】 リブラ メタルウィール　メタルファイトベイブレード",
     "condition": "📦 Excellent",
@@ -7487,7 +7487,7 @@
   },
   "m61035281445": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 3700,
     "title": "メタルファイトベイブレード サムライイフレイドW145DF",
     "condition": "📦 Excellent",
@@ -7505,7 +7505,7 @@
   },
   "m61615981239": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 888,
     "title": "メタルファイトベイブレード 初代 エスコルピオWD145B",
     "condition": "📦 Excellent",
@@ -7523,15 +7523,15 @@
   },
   "m65685844179": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 3869,
     "title": "【限定 】国内正規品 エルドラゴデストロイ ゴールドアーマーver.",
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m65685844179_1.jpg?1789028655",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m65685844179_1.jpg?1789028655",
     "url": "https://jp.mercari.com/item/m65685844179",
-    "seller_id": "736808388",
+    "seller_id": 736808388,
     "price_history": [
       {
         "price": 5450,
@@ -7793,7 +7793,7 @@
   },
   "m91758490930": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 5000,
     "title": "アクアリオ 初期型 初代 メタルファイトベイブレード BEYBLADE",
     "condition": "🆕 Brand New/Unused",
@@ -7837,9 +7837,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m46942187123_1.jpg?1784347007",
+    "image": "https://static.mercdn.net/thumb/item/webp/m46942187123_1.jpg?1784347007",
     "url": "https://jp.mercari.com/item/m46942187123",
-    "seller_id": 159550329,
+    "seller_id": "159550329",
     "price_history": [
       {
         "price": 18120,
@@ -8269,7 +8269,7 @@
   },
   "m53588439987": {
     "status": "on_sale",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "price": 3900,
     "title": "【レアパーツ多数】メタルファイト　左右ランチャー／エルドラゴ限定パーツ／",
     "condition": "📦 Fair",
@@ -8512,7 +8512,7 @@
   "m92137784225": {
     "status": "on_sale",
     "price": 1699,
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "title": "コロコロコミック限定 ファイブスターペガシス メタルファイトベイブレード",
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
@@ -8535,7 +8535,7 @@
     "status": "on_sale",
     "price": 2333,
     "title": "ライトニングエルドラゴ100HF　【メタルファイトベイブレード】",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -8571,7 +8571,7 @@
     "status": "on_sale",
     "price": 14444,
     "title": "【未使用】メタルファイトベイブレード BB-75 デッキエントリーセット",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -8589,7 +8589,7 @@
     "status": "on_sale",
     "price": 4400,
     "title": "ベイブレードバースト ストームペガシス",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -8647,7 +8647,7 @@
     "status": "on_sale",
     "price": 1400,
     "title": "メタルファイトベイブレード ロックエスコルピオ T125JB",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -8665,7 +8665,7 @@
     "status": "on_sale",
     "price": 1800,
     "title": "メタルファイトベイブレード ポイズンサーペント SW145SD",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -8683,7 +8683,7 @@
     "status": "on_sale",
     "price": 980,
     "title": "○2本セット メタルファイト ベイブレード 爆誕サイバーペガシス 他 DSソフト",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -8701,7 +8701,7 @@
     "status": "on_sale",
     "price": 2899,
     "title": "【未使用】WD ワイドディフェンス 5セット メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -8755,7 +8755,7 @@
     "status": "on_sale",
     "price": 800,
     "title": "New値下げ品!!　メタルファイトベイブレード　頂上決戦　ビッグバンブレーダーズ",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -8785,7 +8785,7 @@
     "status": "on_sale",
     "price": 800,
     "title": "New値下げ品!!　DS　メタルファイト　ベイブレード　ゲーム　カセット　ソフト",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -9161,7 +9161,7 @@
     "status": "on_sale",
     "price": 19899,
     "title": "【正規品】メタルファイトベイブレード まとめ売り",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -9407,7 +9407,7 @@
     "status": "on_sale",
     "price": 19555,
     "title": "ベイブレードX メタルファイトベイブレードセット バラ売り要検討",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -9449,7 +9449,7 @@
     "status": "on_sale",
     "price": 1100,
     "title": "DS メタルファイト ベイブレード 爆誕!サイバーペガシス",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -9467,7 +9467,7 @@
     "status": "on_sale",
     "price": 1550,
     "title": "メタルファイトベイブレード ライトウィール　二個セット",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "⚠️ Junk/Poor",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -9485,7 +9485,7 @@
     "status": "on_sale",
     "price": 144000,
     "title": "【超希少】メタルファイト ベイブレード 究極 DXセット",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -9503,7 +9503,7 @@
     "status": "on_sale",
     "price": 1450,
     "title": "メタルファイトベイブレード キラービフォール フェイス メタルウィール",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "⚠️ Junk/Poor",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -9525,7 +9525,7 @@
     "status": "on_sale",
     "price": 900,
     "title": "ベイブレード メタルファイト",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -9543,7 +9543,7 @@
     "status": "on_sale",
     "price": 1299,
     "title": "メタルファイトベイブレード ツール付き",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11119,7 +11119,7 @@
     "status": "on_sale",
     "price": 19000,
     "title": "【新品】メタルファイトベイブレード BB43 ライトニングエルドラゴ100HF",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11155,7 +11155,7 @@
     "status": "on_sale",
     "price": 3000,
     "title": "国内正規品メタルファイトベイブレード バーンサーペントWA130SD",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11193,7 +11193,7 @@
     "status": "on_sale",
     "price": 1500,
     "title": "メタルファイトベイブレード　ポイズンサーペント",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11215,7 +11215,7 @@
     "status": "on_sale",
     "price": 1500,
     "title": "メタルファイトベイブレード　バーンフェニックス",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11551,7 +11551,7 @@
     "status": "on_sale",
     "price": 6600,
     "title": "サーマルラチェルタ メタルファイトベイブレード 4D ゼロジー",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11593,7 +11593,7 @@
     "status": "on_sale",
     "price": 5500,
     "title": "インフィニティリブラGB145S メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11611,7 +11611,7 @@
     "status": "on_sale",
     "price": 1550,
     "title": "メタルファイトベイブレード　ダークブルダークブル H145SD",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11629,13 +11629,13 @@
     "status": "on_sale",
     "price": 34277,
     "title": "メタルファイトベイブレード　まとめ売り 35個等",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m18463703588_1.jpg?1783820770",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m18463703588_1.jpg?1783820770",
     "url": "https://jp.mercari.com/item/m18463703588",
-    "seller_id": "949590147",
+    "seller_id": 949590147,
     "price_history": [
       {
         "price": 41000,
@@ -11715,7 +11715,7 @@
     "status": "on_sale",
     "price": 2000,
     "title": "メタルウィール 5種セット メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -11733,7 +11733,7 @@
     "status": "on_sale",
     "price": 1100,
     "title": "フレイムビクシス230WD フェイスシール メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -11759,13 +11759,13 @@
     "status": "on_sale",
     "price": 1100,
     "title": "ファントムオリオン B:D フェイスシール　メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m64998541055_1.jpg?1786795792",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m64998541055_1.jpg?1786795792",
     "url": "https://jp.mercari.com/item/m64998541055",
-    "seller_id": "483763296",
+    "seller_id": 483763296,
     "price_history": [
       {
         "price": 2000,
@@ -12059,9 +12059,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m29995115401_1.jpg?1786859504",
+    "image": "https://static.mercdn.net/thumb/item/webp/m29995115401_1.jpg?1786859504",
     "url": "https://jp.mercari.com/item/m29995115401",
-    "seller_id": 483763296,
+    "seller_id": "483763296",
     "price_history": [
       {
         "price": 1800,
@@ -12085,7 +12085,7 @@
     "status": "on_sale",
     "price": 1200,
     "title": "エルドラゴデストロイF:S フェイスシール メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -12127,7 +12127,7 @@
     "status": "on_sale",
     "price": 6000,
     "title": "ジェイドジュピターS130RB フェイスシール メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -12161,7 +12161,7 @@
     "status": "on_sale",
     "price": 1100,
     "title": "トルネードホルセウス130RSF フェイスシール メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -12183,7 +12183,7 @@
     "status": "on_sale",
     "price": 7800,
     "title": "メタルファイトベイブレード　ベイブレードバースト まとめ売り",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "⚠️ Junk/Poor",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -12519,7 +12519,7 @@
     "status": "on_sale",
     "price": 12000,
     "title": "メタルファイト ベイブレード　ステッカー",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -12541,7 +12541,7 @@
     "status": "on_sale",
     "price": 3700,
     "title": "メタルファイト ベイブレード BB80 グラビティペルセウスAD145WD",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -12563,7 +12563,7 @@
     "status": "on_sale",
     "price": 2000,
     "title": "メタルファイト ベイブレード BB93 レイユニコルノD125CS",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -12581,7 +12581,7 @@
     "status": "on_sale",
     "price": 1800,
     "title": "メタルファイト ベイブレード フレイムサジタリオC145S",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -12599,7 +12599,7 @@
     "status": "on_sale",
     "price": 599,
     "title": "ニンテンドーDSソフト メタルファイト ベイブレード 2本セット",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -13315,7 +13315,7 @@
     "status": "on_sale",
     "price": 19000,
     "title": "メタルファイトベイブレード 3種セット コロコロコミック応募者全員サービス",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -13349,7 +13349,7 @@
     "status": "on_sale",
     "price": 6800,
     "title": "(希少)メタルファイトベイブレードまとめ売り",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -13371,7 +13371,7 @@
     "status": "on_sale",
     "price": 1600,
     "title": "ベイブレード　ガイアドラグーンV",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -13389,7 +13389,7 @@
     "status": "on_sale",
     "price": 1555,
     "title": "ニンテンドーDS ソフト 3本セット ポケモン　ベイブレード　アイシールド21",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -13411,7 +13411,7 @@
     "status": "on_sale",
     "price": 59999,
     "title": "メタルファイトベイブレード　66個　まとめ売り　引退品　バラ売り可能　即購入可能",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -13429,7 +13429,7 @@
     "status": "on_sale",
     "price": 80000,
     "title": "メタルファイト ベイブレード まとめ売り 専用ケース付き",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -13471,7 +13471,7 @@
     "status": "on_sale",
     "price": 5555,
     "title": "【希少！未開封！】コロコロ限定　メタルファイトベイブレード ディバインキメラ",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -13493,7 +13493,7 @@
     "status": "on_sale",
     "price": 35000,
     "title": "WBBA限定ビックバンペガシス アジアモデル 完全美品",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -13523,7 +13523,7 @@
     "status": "on_sale",
     "price": 12999,
     "title": "ディバインキメラ 完全美品 メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -13541,7 +13541,7 @@
     "status": "on_sale",
     "price": 11999,
     "title": "バルカンホルセウス 完全美品 メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -13559,7 +13559,7 @@
     "status": "on_sale",
     "price": 12999,
     "title": "レイユニコルノ 極光ver. 完全美品 メタルファイトベイブレード",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -14669,7 +14669,7 @@
     "status": "on_sale",
     "price": 880,
     "title": "★メタルファイト ベイブレード レジャーシートSサイズ 1人用 2点セット★",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -14691,7 +14691,7 @@
     "status": "on_sale",
     "price": 7500,
     "title": "日本正規品 コロコロ ベイブレード レイユニコルノ極光ver. 特典シール付き",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -15047,7 +15047,7 @@
     "status": "on_sale",
     "price": 6900,
     "title": "「美品」メタルファイトベイブレード ファントムオリオンB:D",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -15073,7 +15073,7 @@
     "status": "on_sale",
     "price": 9999,
     "title": "希少 メタルファイトベイブレード 12個 ベイシューター 3個 ベイポインター",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "⚠️ Junk/Poor",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -17403,13 +17403,13 @@
     "status": "on_sale",
     "price": 1100,
     "title": "ポケモン シール ステッカー ベイブレード ステッカーまとめ売り",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m31699341586_1.jpg?1787975415",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m31699341586_1.jpg?1787975415",
     "url": "https://jp.mercari.com/item/m31699341586",
-    "seller_id": "483316083",
+    "seller_id": 483316083,
     "price_history": [
       {
         "price": 2000,
@@ -17449,7 +17449,7 @@
     "status": "on_sale",
     "price": 777,
     "title": "メタルファイトベイブレード 本体",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -17475,7 +17475,7 @@
     "status": "on_sale",
     "price": 1800,
     "title": "メタルファイトベイブレード 2個セット",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -17497,7 +17497,7 @@
     "status": "on_sale",
     "price": 680,
     "title": "DSソフト　メタルファイト　ベイブレード　動作確認済み",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -17579,7 +17579,7 @@
     "status": "on_sale",
     "price": 750,
     "title": "メタルファイト ベイブレード ユニコルノ 系統　レア",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -17659,7 +17659,7 @@
     "status": "on_sale",
     "price": 777,
     "title": "メタルファイトベイブレード 本体",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -17689,7 +17689,7 @@
     "status": "on_sale",
     "price": 980,
     "title": "メタルファイト ベイブレード 頂上決戦！ビッグバン・ブレーダーズ 2本セット",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -17707,7 +17707,7 @@
     "status": "on_sale",
     "price": 8900,
     "title": "メタルファイトベイブレード まとめ売り",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -17769,7 +17769,7 @@
     "status": "on_sale",
     "price": 900,
     "title": "究極改造セット　グラビティペルセウス　メタルファイト　ベイブレード　シール",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
@@ -17803,7 +17803,7 @@
     "status": "on_sale",
     "price": 700,
     "title": "メタルファイト ベイブレード ガチンコスタジアム",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Stadium",
@@ -17821,7 +17821,7 @@
     "status": "on_sale",
     "price": 8199,
     "title": "メタルファイトベイブレード グラビティペルセウス エルドラゴ",
-    "last_checked": 1791566197,
+    "last_checked": 1791567999,
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
@@ -18535,7 +18535,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791566197
+    "last_checked": 1791567999
   },
   "m65853154712": {
     "status": "on_sale",
@@ -18561,7 +18561,7 @@
         "timestamp": 1790761900
       }
     ],
-    "last_checked": 1791566197
+    "last_checked": 1791567999
   },
   "m59633358057": {
     "status": "on_sale",
@@ -19562,16 +19562,16 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m79439618680_1.jpg?1651582963",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m79439618680_1.jpg?1651582963",
     "url": "https://jp.mercari.com/item/m79439618680",
-    "seller_id": "339676702",
+    "seller_id": 339676702,
     "price_history": [
       {
         "price": 4700,
         "timestamp": 1788356148
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m28759690777": {
     "status": "on_sale",
@@ -19589,7 +19589,7 @@
         "timestamp": 1788360064
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m34332954811": {
     "status": "on_sale",
@@ -19623,7 +19623,7 @@
         "timestamp": 1790945927
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m14998927199": {
     "status": "on_sale",
@@ -19641,7 +19641,7 @@
         "timestamp": 1788409258
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m19283725846": {
     "status": "on_sale",
@@ -19659,7 +19659,7 @@
         "timestamp": 1788409551
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m82802948856": {
     "status": "on_sale",
@@ -19787,7 +19787,7 @@
         "timestamp": 1791013906
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m24452858931": {
     "status": "on_sale",
@@ -19809,7 +19809,7 @@
         "timestamp": 1789475479
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m52568958648": {
     "status": "on_sale",
@@ -19831,7 +19831,7 @@
         "timestamp": 1791384997
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m21775542524": {
     "status": "on_sale",
@@ -20162,9 +20162,9 @@
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m46095475577_1.jpg?1788457345",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m46095475577_1.jpg?1788457345",
     "url": "https://jp.mercari.com/item/m46095475577",
-    "seller_id": "947696255",
+    "seller_id": 947696255,
     "price_history": [
       {
         "price": 50000,
@@ -20187,7 +20187,7 @@
         "timestamp": 1791454899
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m63600021220": {
     "status": "on_sale",
@@ -20347,7 +20347,7 @@
         "timestamp": 1788511325
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m46311050159": {
     "status": "on_sale",
@@ -20429,7 +20429,7 @@
         "timestamp": 1788513056
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m59815533430": {
     "status": "on_sale",
@@ -20447,7 +20447,7 @@
         "timestamp": 1788513056
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m86548219937": {
     "status": "on_sale",
@@ -20555,7 +20555,7 @@
         "timestamp": 1791563787
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m62185106238": {
     "status": "on_sale",
@@ -20581,7 +20581,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m94007209991": {
     "status": "on_sale",
@@ -20599,7 +20599,7 @@
         "timestamp": 1788516658
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m49815625515": {
     "status": "sold",
@@ -20659,7 +20659,7 @@
         "timestamp": 1788519688
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m98625955577": {
     "status": "on_sale",
@@ -20699,7 +20699,7 @@
         "timestamp": 1788523852
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m84325894741": {
     "status": "on_sale",
@@ -20725,7 +20725,7 @@
         "timestamp": 1789988517
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m81113286974": {
     "status": "on_sale",
@@ -20936,9 +20936,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m17256337139_1.jpg?1788594458",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m17256337139_1.jpg?1788594458",
     "url": "https://jp.mercari.com/item/m17256337139",
-    "seller_id": "428398874",
+    "seller_id": 428398874,
     "price_history": [
       {
         "price": 8000,
@@ -20953,7 +20953,7 @@
         "timestamp": 1791538586
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m30557020612": {
     "status": "on_sale",
@@ -20962,9 +20962,9 @@
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m30557020612_1.jpg?1790319733",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m30557020612_1.jpg?1790319733",
     "url": "https://jp.mercari.com/item/m30557020612",
-    "seller_id": "428398874",
+    "seller_id": 428398874,
     "price_history": [
       {
         "price": 9500,
@@ -20995,7 +20995,7 @@
         "timestamp": 1791538586
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m16341819771": {
     "status": "on_sale",
@@ -21004,9 +21004,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m16341819771_1.jpg?1788594654",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m16341819771_1.jpg?1788594654",
     "url": "https://jp.mercari.com/item/m16341819771",
-    "seller_id": "428398874",
+    "seller_id": 428398874,
     "price_history": [
       {
         "price": 9000,
@@ -21033,7 +21033,7 @@
         "timestamp": 1791538586
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m90365286310": {
     "status": "on_sale",
@@ -21275,7 +21275,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m61071676902": {
     "status": "on_sale",
@@ -21321,7 +21321,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m41747550452": {
     "status": "removed",
@@ -21361,7 +21361,7 @@
         "timestamp": 1790862695
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m39488007859": {
     "status": "on_sale",
@@ -21387,7 +21387,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m39067687701": {
     "status": "on_sale",
@@ -21405,7 +21405,7 @@
         "timestamp": 1788653453
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m41989796628": {
     "status": "on_sale",
@@ -21423,7 +21423,7 @@
         "timestamp": 1788653453
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m68319803748": {
     "status": "on_sale",
@@ -21441,7 +21441,7 @@
         "timestamp": 1788653453
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m86293403643": {
     "status": "on_sale",
@@ -21479,7 +21479,7 @@
         "timestamp": 1790735505
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m52965353192": {
     "status": "on_sale",
@@ -21497,7 +21497,7 @@
         "timestamp": 1788654338
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m59563837389": {
     "status": "removed",
@@ -21537,7 +21537,7 @@
         "timestamp": 1790487677
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m13254317315": {
     "status": "on_sale",
@@ -21555,7 +21555,7 @@
         "timestamp": 1788655252
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m71484758946": {
     "status": "on_sale",
@@ -21573,7 +21573,7 @@
         "timestamp": 1788655553
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m69896844007": {
     "status": "removed",
@@ -22124,9 +22124,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m26201152357_1.jpg?1788686001",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m26201152357_1.jpg?1788686001",
     "url": "https://jp.mercari.com/item/m26201152357",
-    "seller_id": "306263425",
+    "seller_id": 306263425,
     "price_history": [
       {
         "price": 1500,
@@ -22161,7 +22161,7 @@
         "timestamp": 1791369707
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m88927145621": {
     "status": "removed",
@@ -22233,7 +22233,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m79859285195": {
     "status": "on_sale",
@@ -22255,7 +22255,7 @@
         "timestamp": 1788689141
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m66623323394": {
     "status": "on_sale",
@@ -22289,7 +22289,7 @@
         "timestamp": 1789427144
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m91211614713": {
     "status": "on_sale",
@@ -22399,7 +22399,7 @@
         "timestamp": 1789923631
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m33254692376": {
     "status": "on_sale",
@@ -22433,7 +22433,7 @@
         "timestamp": 1791029522
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m33048769466": {
     "status": "on_sale",
@@ -22455,7 +22455,7 @@
         "timestamp": 1790280374
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m51938044691": {
     "status": "on_sale",
@@ -22497,7 +22497,7 @@
         "timestamp": 1790317567
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m14904020665": {
     "status": "on_sale",
@@ -22591,7 +22591,7 @@
         "timestamp": 1789923631
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m76948194976": {
     "status": "on_sale",
@@ -22621,7 +22621,7 @@
         "timestamp": 1790317567
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m80286120570": {
     "status": "sold",
@@ -23001,7 +23001,7 @@
         "timestamp": 1788791143
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m79112486014": {
     "status": "on_sale",
@@ -23019,7 +23019,7 @@
         "timestamp": 1788796545
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m89198996648": {
     "status": "on_sale",
@@ -23037,7 +23037,7 @@
         "timestamp": 1788796545
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m38372014577": {
     "status": "on_sale",
@@ -23055,7 +23055,7 @@
         "timestamp": 1788798344
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m93967147157": {
     "status": "removed",
@@ -23094,9 +23094,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m75399128085_1.jpg?1743745001",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m75399128085_1.jpg?1743745001",
     "url": "https://jp.mercari.com/item/m75399128085",
-    "seller_id": "604540266",
+    "seller_id": 604540266,
     "price_history": [
       {
         "price": 8399,
@@ -23123,7 +23123,7 @@
         "timestamp": 1791437196
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m99197351444": {
     "status": "sold",
@@ -23337,7 +23337,7 @@
         "timestamp": 1788946855
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m90165210527": {
     "status": "removed",
@@ -23385,7 +23385,7 @@
         "timestamp": 1788888068
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m31518992449": {
     "status": "removed",
@@ -23421,7 +23421,7 @@
         "timestamp": 1788903655
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m64052674689": {
     "status": "on_sale",
@@ -23439,7 +23439,7 @@
         "timestamp": 1788907259
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m69735604034": {
     "status": "on_sale",
@@ -23681,7 +23681,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m99227241731": {
     "status": "on_sale",
@@ -23775,7 +23775,7 @@
         "timestamp": 1789923631
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m83988003112": {
     "status": "sold",
@@ -23875,7 +23875,7 @@
         "timestamp": 1790819799
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m32495364529": {
     "status": "on_sale",
@@ -23961,7 +23961,7 @@
         "timestamp": 1791544895
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m36124782944": {
     "status": "on_sale",
@@ -24818,9 +24818,9 @@
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m98606698975_1.jpg?1789004555",
+    "image": "https://static.mercdn.net/thumb/item/webp/m98606698975_1.jpg?1789004555",
     "url": "https://jp.mercari.com/item/m98606698975",
-    "seller_id": 542320917,
+    "seller_id": "542320917",
     "price_history": [
       {
         "price": 7999,
@@ -24921,7 +24921,7 @@
         "timestamp": 1789011660
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m48698068100": {
     "status": "on_sale",
@@ -25027,7 +25027,7 @@
         "timestamp": 1789023697
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m94073448920": {
     "status": "on_sale",
@@ -25075,7 +25075,7 @@
         "timestamp": 1790402768
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m51946221782": {
     "status": "on_sale",
@@ -25137,7 +25137,7 @@
         "timestamp": 1791359211
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m67464863570": {
     "status": "on_sale",
@@ -25205,7 +25205,7 @@
         "timestamp": 1790342208
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m56918937986": {
     "status": "on_sale",
@@ -25227,7 +25227,7 @@
         "timestamp": 1791124612
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m44146914700": {
     "status": "on_sale",
@@ -25257,7 +25257,7 @@
         "timestamp": 1791124328
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m91357339131": {
     "status": "on_sale",
@@ -25505,7 +25505,7 @@
         "timestamp": 1789548355
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m70486319713": {
     "status": "removed",
@@ -25901,7 +25901,7 @@
         "timestamp": 1791111748
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m16813257204": {
     "status": "on_sale",
@@ -25910,9 +25910,9 @@
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m16813257204_1.jpg?1789100542",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m16813257204_1.jpg?1789100542",
     "url": "https://jp.mercari.com/item/m16813257204",
-    "seller_id": "285924739",
+    "seller_id": 285924739,
     "price_history": [
       {
         "price": 6999,
@@ -25991,7 +25991,7 @@
         "timestamp": 1791462517
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m96886628309": {
     "status": "on_sale",
@@ -26085,7 +26085,7 @@
         "timestamp": 1791365201
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m36977785887": {
     "status": "on_sale",
@@ -26103,7 +26103,7 @@
         "timestamp": 1789101079
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m24464309002": {
     "status": "on_sale",
@@ -26121,7 +26121,7 @@
         "timestamp": 1789101959
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m32778238810": {
     "status": "sold",
@@ -26351,7 +26351,7 @@
         "timestamp": 1789121755
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m54470918121": {
     "status": "on_sale",
@@ -26369,7 +26369,7 @@
         "timestamp": 1789122056
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m57552757458": {
     "status": "on_sale",
@@ -26387,7 +26387,7 @@
         "timestamp": 1789122948
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m58542594594": {
     "status": "on_sale",
@@ -26405,7 +26405,7 @@
         "timestamp": 1789127168
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m91577612904": {
     "status": "on_sale",
@@ -26414,16 +26414,16 @@
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m91577612904_1.jpg?1789127249",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m91577612904_1.jpg?1789127249",
     "url": "https://jp.mercari.com/item/m91577612904",
-    "seller_id": "759038552",
+    "seller_id": 759038552,
     "price_history": [
       {
         "price": 12300,
         "timestamp": 1789127469
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m18194995215": {
     "status": "on_sale",
@@ -26445,7 +26445,7 @@
         "timestamp": 1790861195
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m34359713730": {
     "status": "on_sale",
@@ -26467,7 +26467,7 @@
         "timestamp": 1789349739
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m87773350013": {
     "status": "on_sale",
@@ -26693,7 +26693,7 @@
         "timestamp": 1789923631
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m14110052963": {
     "status": "on_sale",
@@ -26887,7 +26887,7 @@
         "timestamp": 1789140952
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m30341004135": {
     "status": "on_sale",
@@ -26969,7 +26969,7 @@
         "timestamp": 1789143667
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m48455072676": {
     "status": "on_sale",
@@ -26987,7 +26987,7 @@
         "timestamp": 1789175463
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m92735503031": {
     "status": "on_sale",
@@ -27005,7 +27005,7 @@
         "timestamp": 1789183874
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m94774619444": {
     "status": "on_sale",
@@ -27131,7 +27131,7 @@
         "timestamp": 1790147495
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m28136712455": {
     "status": "on_sale",
@@ -27470,9 +27470,9 @@
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m41286463195_1.jpg?1789207513",
+    "image": "https://static.mercdn.net/thumb/item/webp/m41286463195_1.jpg?1789207513",
     "url": "https://jp.mercari.com/item/m41286463195",
-    "seller_id": 446648096,
+    "seller_id": "446648096",
     "price_history": [
       {
         "price": 5555,
@@ -28544,9 +28544,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m73524164182_1.jpg?1789290123",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m73524164182_1.jpg?1789290123",
     "url": "https://jp.mercari.com/item/m73524164182",
-    "seller_id": "306263425",
+    "seller_id": 306263425,
     "price_history": [
       {
         "price": 2000,
@@ -28573,7 +28573,7 @@
         "timestamp": 1791369707
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m80911716632": {
     "status": "on_sale",
@@ -30206,9 +30206,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m10916273168_1.jpg?1789474570",
+    "image": "https://static.mercdn.net/thumb/item/webp/m10916273168_1.jpg?1789474570",
     "url": "https://jp.mercari.com/item/m10916273168",
-    "seller_id": 542320917,
+    "seller_id": "542320917",
     "price_history": [
       {
         "price": 14999,
@@ -31038,9 +31038,9 @@
     "condition": "✨ Like New",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m64665055503_1.jpg?1789604230",
+    "image": "https://static.mercdn.net/thumb/item/webp/m64665055503_1.jpg?1789604230",
     "url": "https://jp.mercari.com/item/m64665055503",
-    "seller_id": 542320917,
+    "seller_id": "542320917",
     "price_history": [
       {
         "price": 9999,
@@ -31556,9 +31556,9 @@
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m18559888309_1.jpg?1789823233",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m18559888309_1.jpg?1789823233",
     "url": "https://jp.mercari.com/item/m18559888309",
-    "seller_id": "142316021",
+    "seller_id": 142316021,
     "price_history": [
       {
         "price": 49999,
@@ -31593,7 +31593,7 @@
         "timestamp": 1791340333
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m54406570197": {
     "status": "removed",
@@ -32544,9 +32544,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m70544845857_1.jpg?1789703040",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m70544845857_1.jpg?1789703040",
     "url": "https://jp.mercari.com/item/m70544845857",
-    "seller_id": "361313475",
+    "seller_id": 361313475,
     "price_history": [
       {
         "price": 1600,
@@ -32577,7 +32577,7 @@
         "timestamp": 1791517606
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m68309532838": {
     "status": "sold",
@@ -32670,9 +32670,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m31185500096_1.jpg?1789703346",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m31185500096_1.jpg?1789703346",
     "url": "https://jp.mercari.com/item/m31185500096",
-    "seller_id": "361313475",
+    "seller_id": 361313475,
     "price_history": [
       {
         "price": 8000,
@@ -32711,7 +32711,7 @@
         "timestamp": 1791517606
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m20047841443": {
     "status": "on_sale",
@@ -32808,9 +32808,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m79103630313_1.jpg?1789703574",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m79103630313_1.jpg?1789703574",
     "url": "https://jp.mercari.com/item/m79103630313",
-    "seller_id": "361313475",
+    "seller_id": 361313475,
     "price_history": [
       {
         "price": 15000,
@@ -32853,7 +32853,7 @@
         "timestamp": 1791517606
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m61370264316": {
     "status": "on_sale",
@@ -33000,9 +33000,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m45677103433_1.jpg?1789704170",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m45677103433_1.jpg?1789704170",
     "url": "https://jp.mercari.com/item/m45677103433",
-    "seller_id": "361313475",
+    "seller_id": 361313475,
     "price_history": [
       {
         "price": 15000,
@@ -33045,7 +33045,7 @@
         "timestamp": 1791517606
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m36789301453": {
     "status": "sold",
@@ -33168,9 +33168,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/webp/m73136080756_1.jpg?1789705304",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m73136080756_1.jpg?1789705304",
     "url": "https://jp.mercari.com/item/m73136080756",
-    "seller_id": "361313475",
+    "seller_id": 361313475,
     "price_history": [
       {
         "price": 22000,
@@ -33217,7 +33217,7 @@
         "timestamp": 1791517606
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m32001017762": {
     "status": "removed",
@@ -34165,7 +34165,7 @@
         "timestamp": 1791124328
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m39458224814": {
     "status": "on_sale",
@@ -38143,9 +38143,9 @@
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m53215407463_1.jpg?1789973297",
+    "image": "https://static.mercdn.net/thumb/item/webp/m53215407463_1.jpg?1789973297",
     "url": "https://jp.mercari.com/item/m53215407463",
-    "seller_id": 968628433,
+    "seller_id": "968628433",
     "price_history": [
       {
         "price": 15000,
@@ -38208,7 +38208,7 @@
         "timestamp": 1791227800
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m40495795613": {
     "status": "on_sale",
@@ -40332,7 +40332,7 @@
         "timestamp": 1791548820
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m81449251936": {
     "status": "on_sale",
@@ -40718,7 +40718,7 @@
         "timestamp": 1791010009
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m42076909684": {
     "status": "sold",
@@ -41547,9 +41547,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Launcher",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m73115739378_1.jpg?1790197470",
+    "image": "https://static.mercdn.net/thumb/item/webp/m73115739378_1.jpg?1790197470",
     "url": "https://jp.mercari.com/item/m73115739378",
-    "seller_id": 431956483,
+    "seller_id": "431956483",
     "price_history": [
       {
         "price": 2500,
@@ -42349,9 +42349,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m77382283810_1.jpg?1776907537",
+    "image": "https://static.mercdn.net/thumb/item/webp/m77382283810_1.jpg?1776907537",
     "url": "https://jp.mercari.com/item/m77382283810",
-    "seller_id": 542320917,
+    "seller_id": "542320917",
     "price_history": [
       {
         "price": 7499,
@@ -43753,9 +43753,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m38514730555_1.jpg?1790352286",
+    "image": "https://static.mercdn.net/thumb/item/webp/m38514730555_1.jpg?1790352286",
     "url": "https://jp.mercari.com/item/m38514730555",
-    "seller_id": 945773406,
+    "seller_id": "945773406",
     "price_history": [
       {
         "price": 19900,
@@ -43783,9 +43783,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m44130782686_1.jpg?1790352275",
+    "image": "https://static.mercdn.net/thumb/item/webp/m44130782686_1.jpg?1790352275",
     "url": "https://jp.mercari.com/item/m44130782686",
-    "seller_id": 945773406,
+    "seller_id": "945773406",
     "price_history": [
       {
         "price": 34900,
@@ -44921,9 +44921,9 @@
     "condition": "⚠️ Junk/Poor",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m66733745558_1.jpg?1781894993",
+    "image": "https://static.mercdn.net/thumb/item/webp/m66733745558_1.jpg?1781894993",
     "url": "https://jp.mercari.com/item/m66733745558",
-    "seller_id": 488041671,
+    "seller_id": "488041671",
     "price_history": [
       {
         "price": 1499,
@@ -45014,7 +45014,7 @@
         "timestamp": 1790961111
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m88864214235": {
     "status": "on_sale",
@@ -45188,7 +45188,7 @@
         "timestamp": 1791327372
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m75797137144": {
     "status": "on_sale",
@@ -45536,7 +45536,7 @@
         "timestamp": 1791086534
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m71063975429": {
     "status": "on_sale",
@@ -46285,9 +46285,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m15917910900_1.jpg?1790434607",
+    "image": "https://static.mercdn.net/thumb/item/webp/m15917910900_1.jpg?1790434607",
     "url": "https://jp.mercari.com/item/m15917910900",
-    "seller_id": 755654931,
+    "seller_id": "755654931",
     "price_history": [
       {
         "price": 1400,
@@ -46800,7 +46800,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m83197340464": {
     "status": "sold",
@@ -47314,7 +47314,7 @@
         "timestamp": 1791122198
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m47539382010": {
     "status": "on_sale",
@@ -47766,7 +47766,7 @@
         "timestamp": 1791422798
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m78084015377": {
     "status": "on_sale",
@@ -47930,7 +47930,7 @@
         "timestamp": 1790839736
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m40993965605": {
     "status": "on_sale",
@@ -48374,7 +48374,7 @@
         "timestamp": 1791289601
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m16993424073": {
     "status": "on_sale",
@@ -48400,7 +48400,7 @@
         "timestamp": 1791289601
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m53636117521": {
     "status": "on_sale",
@@ -48737,9 +48737,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m31652838191_1.jpg?1791366918",
+    "image": "https://static.mercdn.net/thumb/item/webp/m31652838191_1.jpg?1791366918",
     "url": "https://jp.mercari.com/item/m31652838191",
-    "seller_id": 755654931,
+    "seller_id": "755654931",
     "price_history": [
       {
         "price": 4300,
@@ -49206,7 +49206,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m80998455023": {
     "status": "on_sale",
@@ -49228,7 +49228,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m30706984269": {
     "status": "on_sale",
@@ -49318,7 +49318,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m18586745070": {
     "status": "on_sale",
@@ -50108,7 +50108,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m37391927598": {
     "status": "removed",
@@ -50234,7 +50234,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m11889847443": {
     "status": "on_sale",
@@ -50256,7 +50256,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m94015754436": {
     "status": "sold",
@@ -50959,9 +50959,9 @@
     "condition": "📦 Very Good",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m28801352358_1.jpg?1790695549",
+    "image": "https://static.mercdn.net/thumb/item/webp/m28801352358_1.jpg?1790695549",
     "url": "https://jp.mercari.com/item/m28801352358",
-    "seller_id": 611564564,
+    "seller_id": "611564564",
     "price_history": [
       {
         "price": 1000,
@@ -51179,9 +51179,9 @@
     "condition": "📦 Fair",
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
-    "image": "https://static.mercdn.net/thumb/item/webp/m86796066502_1.jpg?1790717397",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m86796066502_1.jpg?1790717397",
     "url": "https://jp.mercari.com/item/m86796066502",
-    "seller_id": "735569441",
+    "seller_id": 735569441,
     "price_history": [
       {
         "price": 5000,
@@ -51212,7 +51212,7 @@
         "timestamp": 1791502899
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m35772124956": {
     "status": "on_sale",
@@ -51334,7 +51334,7 @@
         "timestamp": 1791542505
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m56961910674": {
     "status": "on_sale",
@@ -51564,7 +51564,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m96249065554": {
     "status": "on_sale",
@@ -51744,7 +51744,7 @@
         "timestamp": 1791459392
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m86574415737": {
     "status": "on_sale",
@@ -51883,9 +51883,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m72051821709_1.jpg?1790764539",
+    "image": "https://static.mercdn.net/thumb/item/webp/m72051821709_1.jpg?1790764539",
     "url": "https://jp.mercari.com/item/m72051821709",
-    "seller_id": 645770022,
+    "seller_id": "645770022",
     "price_history": [
       {
         "price": 3000,
@@ -52813,9 +52813,9 @@
     "condition": "📦 Excellent",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m21945711915_1.jpg?1790783748",
+    "image": "https://static.mercdn.net/thumb/item/webp/m21945711915_1.jpg?1790783748",
     "url": "https://jp.mercari.com/item/m21945711915",
-    "seller_id": 711654418,
+    "seller_id": "711654418",
     "price_history": [
       {
         "price": 1999,
@@ -53108,7 +53108,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m50672896206": {
     "status": "removed",
@@ -53182,7 +53182,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m84838917999": {
     "status": "on_sale",
@@ -53204,7 +53204,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m72130650792": {
     "status": "removed",
@@ -53322,7 +53322,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m72087099014": {
     "status": "on_sale",
@@ -53344,7 +53344,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m69671298483": {
     "status": "on_sale",
@@ -53366,7 +53366,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m18102168287": {
     "status": "on_sale",
@@ -53474,7 +53474,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m36623251445": {
     "status": "sold",
@@ -53564,7 +53564,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m21646283621": {
     "status": "on_sale",
@@ -53628,7 +53628,7 @@
         "timestamp": 1791492134
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m23363904460": {
     "status": "on_sale",
@@ -53637,9 +53637,9 @@
     "condition": "🆕 Brand New/Unused",
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m23363904460_1.jpg?1790832277",
+    "image": "https://static.mercdn.net/thumb/item/webp/m23363904460_1.jpg?1790832277",
     "url": "https://jp.mercari.com/item/m23363904460",
-    "seller_id": 769690495,
+    "seller_id": "769690495",
     "price_history": [
       {
         "price": 13999,
@@ -53688,7 +53688,7 @@
         "timestamp": 1791388015
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m86145387138": {
     "status": "removed",
@@ -53792,7 +53792,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m40176571380": {
     "status": "on_sale",
@@ -53814,7 +53814,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m78503784361": {
     "status": "on_sale",
@@ -53840,7 +53840,7 @@
         "timestamp": 1791151346
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m67368470164": {
     "status": "sold",
@@ -54378,7 +54378,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m14727039191": {
     "status": "on_sale",
@@ -54506,7 +54506,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m41291520486": {
     "status": "on_sale",
@@ -54580,7 +54580,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m43228267545": {
     "status": "on_sale",
@@ -54602,7 +54602,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m81985938432": {
     "status": "sold",
@@ -54736,7 +54736,7 @@
         "timestamp": 1791348414
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m35848886659": {
     "status": "sold",
@@ -54862,7 +54862,7 @@
         "timestamp": 1790984808
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m41607281731": {
     "status": "on_sale",
@@ -55186,7 +55186,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m90302560058": {
     "status": "on_sale",
@@ -55594,7 +55594,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m35298375879": {
     "status": "removed",
@@ -55660,7 +55660,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m56510544815": {
     "status": "on_sale",
@@ -55682,7 +55682,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m12262570602": {
     "status": "on_sale",
@@ -55704,7 +55704,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m72940353703": {
     "status": "on_sale",
@@ -55726,7 +55726,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m41093634125": {
     "status": "sold",
@@ -55968,7 +55968,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m69900950284": {
     "status": "on_sale",
@@ -55990,7 +55990,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m62719891412": {
     "status": "removed",
@@ -56082,7 +56082,7 @@
         "timestamp": 1791181304
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m27154948581": {
     "status": "removed",
@@ -56284,7 +56284,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m56367702329": {
     "status": "removed",
@@ -56576,7 +56576,7 @@
         "timestamp": 1791268920
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m49541210810": {
     "status": "sold",
@@ -56628,7 +56628,7 @@
         "timestamp": 1791538316
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m63380882143": {
     "status": "on_sale",
@@ -56650,7 +56650,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m92942394560": {
     "status": "on_sale",
@@ -56672,7 +56672,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m25917171512": {
     "status": "on_sale",
@@ -56694,7 +56694,7 @@
         "timestamp": 1790944467
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m50666694894": {
     "status": "on_sale",
@@ -56724,7 +56724,7 @@
         "timestamp": 1791073925
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m89787993108": {
     "status": "on_sale",
@@ -56762,7 +56762,7 @@
         "timestamp": 1791268920
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m95533572997": {
     "status": "on_sale",
@@ -60537,9 +60537,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m84998947230_1.jpg?1790955919",
+    "image": "https://static.mercdn.net/thumb/item/webp/m84998947230_1.jpg?1790955919",
     "url": "https://jp.mercari.com/item/m84998947230",
-    "seller_id": 488041671,
+    "seller_id": "488041671",
     "price_history": [
       {
         "price": 2800,
@@ -60666,9 +60666,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m24640086635_1.jpg?1790960346",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m24640086635_1.jpg?1790960346",
     "url": "https://jp.mercari.com/item/m24640086635",
-    "seller_id": "711654418",
+    "seller_id": 711654418,
     "price_history": [
       {
         "price": 7999,
@@ -60695,7 +60695,7 @@
         "timestamp": 1791559593
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m13554271822": {
     "status": "on_sale",
@@ -60734,7 +60734,7 @@
         "timestamp": 1791559593
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m29103886393": {
     "status": "on_sale",
@@ -60840,9 +60840,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m32251421344_1.jpg?1790961718",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m32251421344_1.jpg?1790961718",
     "url": "https://jp.mercari.com/item/m32251421344",
-    "seller_id": "527167608",
+    "seller_id": 527167608,
     "price_history": [
       {
         "price": 14000,
@@ -60853,7 +60853,7 @@
         "timestamp": 1791298340
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m63452999720": {
     "status": "on_sale",
@@ -61521,7 +61521,7 @@
         "timestamp": 1791377816
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "amz_B0HL75PP98": {
     "status": "sold",
@@ -61838,7 +61838,7 @@
         "timestamp": 1791014192
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m71932522536": {
     "status": "on_sale",
@@ -61867,9 +61867,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m25363942735_1.jpg?1791016937",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m25363942735_1.jpg?1791016937",
     "url": "https://jp.mercari.com/item/m25363942735",
-    "seller_id": "186849935",
+    "seller_id": 186849935,
     "price_history": [
       {
         "price": 11000,
@@ -61884,7 +61884,7 @@
         "timestamp": 1791359208
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m24852862517": {
     "status": "on_sale",
@@ -62079,9 +62079,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m66138227061_1.jpg?1791020537",
+    "image": "https://static.mercdn.net/thumb/item/webp/m66138227061_1.jpg?1791020537",
     "url": "https://jp.mercari.com/item/m66138227061",
-    "seller_id": 326657853,
+    "seller_id": "326657853",
     "price_history": [
       {
         "price": 1980,
@@ -62167,9 +62167,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m83692182966_1.jpg?1791021573",
+    "image": "https://static.mercdn.net/thumb/item/webp/m83692182966_1.jpg?1791021573",
     "url": "https://jp.mercari.com/item/m83692182966",
-    "seller_id": 326657853,
+    "seller_id": "326657853",
     "price_history": [
       {
         "price": 2000,
@@ -62268,7 +62268,7 @@
         "timestamp": 1791363125
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m52769943929": {
     "status": "on_sale",
@@ -62291,7 +62291,7 @@
         "timestamp": 1791363125
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m63325058207": {
     "status": "on_sale",
@@ -62301,9 +62301,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m63325058207_1.jpg?1791022688",
+    "image": "https://static.mercdn.net/thumb/item/webp/m63325058207_1.jpg?1791022688",
     "url": "https://jp.mercari.com/item/m63325058207",
-    "seller_id": 326657853,
+    "seller_id": "326657853",
     "price_history": [
       {
         "price": 2000,
@@ -63038,7 +63038,7 @@
         "timestamp": 1791028947
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m67164549155": {
     "status": "on_sale",
@@ -63449,7 +63449,7 @@
         "timestamp": 1791033110
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m69140519619": {
     "status": "removed",
@@ -63911,7 +63911,7 @@
         "timestamp": 1791041796
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m37966124544": {
     "status": "removed",
@@ -64145,7 +64145,7 @@
         "timestamp": 1791056502
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "2JWXx7xWFRKXYvVUsSFegv": {
     "status": "removed",
@@ -64437,9 +64437,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m69616094752_1.jpg?1791079051",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m69616094752_1.jpg?1791079051",
     "url": "https://jp.mercari.com/item/m69616094752",
-    "seller_id": "387217876",
+    "seller_id": 387217876,
     "price_history": [
       {
         "price": 2299,
@@ -64454,7 +64454,7 @@
         "timestamp": 1791294121
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m18827283306": {
     "status": "on_sale",
@@ -64514,7 +64514,7 @@
         "timestamp": 1791124328
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m29925084812": {
     "status": "sold",
@@ -64770,7 +64770,7 @@
         "timestamp": 1791153707
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m92918103380": {
     "status": "sold",
@@ -64926,7 +64926,7 @@
         "timestamp": 1791086534
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m83946901624": {
     "status": "on_sale",
@@ -64945,7 +64945,7 @@
         "timestamp": 1791086534
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "amz_B0H85ZRYJX": {
     "status": "on_sale",
@@ -65786,7 +65786,7 @@
         "timestamp": 1791090708
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m18674669761": {
     "status": "on_sale",
@@ -65805,7 +65805,7 @@
         "timestamp": 1791090708
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m42334102161": {
     "status": "sold",
@@ -65879,7 +65879,7 @@
         "timestamp": 1791090708
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m20437459646": {
     "status": "on_sale",
@@ -66759,7 +66759,7 @@
         "timestamp": 1791107509
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m27409769573": {
     "status": "on_sale",
@@ -66987,9 +66987,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m75446573255_1.jpg?1791111999",
+    "image": "https://static.mercdn.net/thumb/item/webp/m75446573255_1.jpg?1791111999",
     "url": "https://jp.mercari.com/item/m75446573255",
-    "seller_id": 997895332,
+    "seller_id": "997895332",
     "price_history": [
       {
         "price": 3500,
@@ -68065,7 +68065,7 @@
         "timestamp": 1791117981
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m10760123372": {
     "status": "sold",
@@ -68132,9 +68132,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Launcher",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m57921644750_1.jpg?1791119702",
+    "image": "https://static.mercdn.net/thumb/item/webp/m57921644750_1.jpg?1791119702",
     "url": "https://jp.mercari.com/item/m57921644750",
-    "seller_id": 326657853,
+    "seller_id": "326657853",
     "price_history": [
       {
         "price": 3000,
@@ -68159,9 +68159,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Launcher",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m86443589600_1.jpg?1791119978",
+    "image": "https://static.mercdn.net/thumb/item/webp/m86443589600_1.jpg?1791119978",
     "url": "https://jp.mercari.com/item/m86443589600",
-    "seller_id": 326657853,
+    "seller_id": "326657853",
     "price_history": [
       {
         "price": 2500,
@@ -68425,7 +68425,7 @@
         "timestamp": 1791122198
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m93545882792": {
     "status": "on_sale",
@@ -68444,7 +68444,7 @@
         "timestamp": 1791122198
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m33379007381": {
     "status": "on_sale",
@@ -68463,7 +68463,7 @@
         "timestamp": 1791122198
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m91742315160": {
     "status": "removed",
@@ -69105,16 +69105,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m74792374855_1.jpg?1791161983",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m74792374855_1.jpg?1791161983",
     "url": "https://jp.mercari.com/item/m74792374855",
-    "seller_id": "487581191",
+    "seller_id": 487581191,
     "price_history": [
       {
         "price": 45000,
         "timestamp": 1791162152
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m42751563179": {
     "status": "on_sale",
@@ -69194,16 +69194,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m42676902160_1.jpg?1791168222",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m42676902160_1.jpg?1791168222",
     "url": "https://jp.mercari.com/item/m42676902160",
-    "seller_id": "285924739",
+    "seller_id": 285924739,
     "price_history": [
       {
         "price": 2999,
         "timestamp": 1791168402
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m35228206253": {
     "status": "sold",
@@ -69312,9 +69312,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m84182952020_1.jpg?1791175194",
+    "image": "https://static.mercdn.net/thumb/item/webp/m84182952020_1.jpg?1791175194",
     "url": "https://jp.mercari.com/item/m84182952020",
-    "seller_id": 725991776,
+    "seller_id": "725991776",
     "price_history": [
       {
         "price": 38000,
@@ -69416,7 +69416,7 @@
         "timestamp": 1791183399
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m95702820554": {
     "status": "on_sale",
@@ -69435,7 +69435,7 @@
         "timestamp": 1791183399
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "amz_B0GCGWVQS4": {
     "status": "on_sale",
@@ -69523,9 +69523,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m89439829281_1.jpg?1791188242",
+    "image": "https://static.mercdn.net/thumb/item/webp/m89439829281_1.jpg?1791188242",
     "url": "https://jp.mercari.com/item/m89439829281",
-    "seller_id": 974164260,
+    "seller_id": "974164260",
     "price_history": [
       {
         "price": 3500,
@@ -69565,9 +69565,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m42237592424_1.jpg?1791188146",
+    "image": "https://static.mercdn.net/thumb/item/webp/m42237592424_1.jpg?1791188146",
     "url": "https://jp.mercari.com/item/m42237592424",
-    "seller_id": 974164260,
+    "seller_id": "974164260",
     "price_history": [
       {
         "price": 2500,
@@ -69588,16 +69588,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m14699131342_1.jpg?1791189550",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m14699131342_1.jpg?1791189550",
     "url": "https://jp.mercari.com/item/m14699131342",
-    "seller_id": "723586482",
+    "seller_id": 723586482,
     "price_history": [
       {
         "price": 4200,
         "timestamp": 1791189708
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m77017408791": {
     "status": "on_sale",
@@ -69973,9 +69973,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m43675123065_1.jpg?1791202870",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m43675123065_1.jpg?1791202870",
     "url": "https://jp.mercari.com/item/m43675123065",
-    "seller_id": "540316253",
+    "seller_id": 540316253,
     "price_history": [
       {
         "price": 15900,
@@ -69986,7 +69986,7 @@
         "timestamp": 1791296227
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m23569800646": {
     "status": "removed",
@@ -70441,9 +70441,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m59785272600_1.jpg?1791208487",
+    "image": "https://static.mercdn.net/thumb/item/webp/m59785272600_1.jpg?1791208487",
     "url": "https://jp.mercari.com/item/m59785272600",
-    "seller_id": 723586482,
+    "seller_id": "723586482",
     "price_history": [
       {
         "price": 9900,
@@ -71174,9 +71174,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m16647779024_1.jpg?1791257465",
+    "image": "https://static.mercdn.net/thumb/item/webp/m16647779024_1.jpg?1791257465",
     "url": "https://jp.mercari.com/item/m16647779024",
-    "seller_id": 277209306,
+    "seller_id": "277209306",
     "price_history": [
       {
         "price": 500,
@@ -71228,9 +71228,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m89881380260_1.jpg?1791257785",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m89881380260_1.jpg?1791257785",
     "url": "https://jp.mercari.com/item/m89881380260",
-    "seller_id": "401163765",
+    "seller_id": 401163765,
     "price_history": [
       {
         "price": 22000,
@@ -71249,7 +71249,7 @@
         "timestamp": 1791546997
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m74444395226": {
     "status": "sold",
@@ -71451,16 +71451,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Launcher",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m51532077628_1.jpg?1791275100",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m51532077628_1.jpg?1791275100",
     "url": "https://jp.mercari.com/item/m51532077628",
-    "seller_id": "723586482",
+    "seller_id": 723586482,
     "price_history": [
       {
         "price": 1800,
         "timestamp": 1791275200
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "amz_B0H8SGWPWC": {
     "status": "on_sale",
@@ -72538,9 +72538,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Launcher",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m45580574307_1.jpg?1791294609",
+    "image": "https://static.mercdn.net/thumb/item/webp/m45580574307_1.jpg?1791294609",
     "url": "https://jp.mercari.com/item/m45580574307",
-    "seller_id": 765616001,
+    "seller_id": "765616001",
     "price_history": [
       {
         "price": 780,
@@ -72859,7 +72859,7 @@
         "timestamp": 1791298340
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m51508881715": {
     "status": "on_sale",
@@ -72930,9 +72930,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m44157868345_1.jpg?1791299898",
+    "image": "https://static.mercdn.net/thumb/item/webp/m44157868345_1.jpg?1791299898",
     "url": "https://jp.mercari.com/item/m44157868345",
-    "seller_id": 563256773,
+    "seller_id": "563256773",
     "price_history": [
       {
         "price": 15000,
@@ -72949,9 +72949,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m38897019167_1.jpg?1791299819",
+    "image": "https://static.mercdn.net/thumb/item/webp/m38897019167_1.jpg?1791299819",
     "url": "https://jp.mercari.com/item/m38897019167",
-    "seller_id": 563256773,
+    "seller_id": "563256773",
     "price_history": [
       {
         "price": 15000,
@@ -73041,16 +73041,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m12080547877_1.jpg?1791304624",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m12080547877_1.jpg?1791304624",
     "url": "https://jp.mercari.com/item/m12080547877",
-    "seller_id": "489221036",
+    "seller_id": 489221036,
     "price_history": [
       {
         "price": 3200,
         "timestamp": 1791304780
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m42332429558": {
     "status": "on_sale",
@@ -73060,9 +73060,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Launcher",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m42332429558_1.jpg?1791323112",
+    "image": "https://static.mercdn.net/thumb/item/webp/m42332429558_1.jpg?1791323112",
     "url": "https://jp.mercari.com/item/m42332429558",
-    "seller_id": 416603368,
+    "seller_id": "416603368",
     "price_history": [
       {
         "price": 780,
@@ -73244,9 +73244,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m71201062112_1.jpg?1791344069",
+    "image": "https://static.mercdn.net/thumb/item/webp/m71201062112_1.jpg?1791344069",
     "url": "https://jp.mercari.com/item/m71201062112",
-    "seller_id": 759038552,
+    "seller_id": "759038552",
     "price_history": [
       {
         "price": 11500,
@@ -73286,9 +73286,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m99971958227_1.jpg?1791345981",
+    "image": "https://static.mercdn.net/thumb/item/webp/m99971958227_1.jpg?1791345981",
     "url": "https://jp.mercari.com/item/m99971958227",
-    "seller_id": 357093778,
+    "seller_id": "357093778",
     "price_history": [
       {
         "price": 6000,
@@ -73324,9 +73324,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m51774465639_1.jpg?1781894419",
+    "image": "https://static.mercdn.net/thumb/item/webp/m51774465639_1.jpg?1781894419",
     "url": "https://jp.mercari.com/item/m51774465639",
-    "seller_id": 488041671,
+    "seller_id": "488041671",
     "price_history": [
       {
         "price": 7800,
@@ -73442,16 +73442,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m18355381206_1.jpg?1777592084",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m18355381206_1.jpg?1777592084",
     "url": "https://jp.mercari.com/item/m18355381206",
-    "seller_id": "853211517",
+    "seller_id": 853211517,
     "price_history": [
       {
         "price": 2750,
         "timestamp": 1791361315
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m89264351821": {
     "status": "on_sale",
@@ -73480,9 +73480,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m26687941389_1.jpg?1791362882",
+    "image": "https://static.mercdn.net/thumb/item/webp/m26687941389_1.jpg?1791362882",
     "url": "https://jp.mercari.com/item/m26687941389",
-    "seller_id": 660974307,
+    "seller_id": "660974307",
     "price_history": [
       {
         "price": 333,
@@ -73690,9 +73690,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m74907398114_1.jpg?1791371456",
+    "image": "https://static.mercdn.net/thumb/item/webp/m74907398114_1.jpg?1791371456",
     "url": "https://jp.mercari.com/item/m74907398114",
-    "seller_id": 883262764,
+    "seller_id": "883262764",
     "price_history": [
       {
         "price": 600,
@@ -73709,9 +73709,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m52772633915_1.jpg?1791371401",
+    "image": "https://static.mercdn.net/thumb/item/webp/m52772633915_1.jpg?1791371401",
     "url": "https://jp.mercari.com/item/m52772633915",
-    "seller_id": 170100684,
+    "seller_id": "170100684",
     "price_history": [
       {
         "price": 8000,
@@ -74331,9 +74331,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m84572315960_1.jpg?1791377597",
+    "image": "https://static.mercdn.net/thumb/item/webp/m84572315960_1.jpg?1791377597",
     "url": "https://jp.mercari.com/item/m84572315960",
-    "seller_id": 998500909,
+    "seller_id": "998500909",
     "price_history": [
       {
         "price": 6980,
@@ -74464,9 +74464,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m83578755370_1.jpg?1791382203",
+    "image": "https://static.mercdn.net/thumb/item/webp/m83578755370_1.jpg?1791382203",
     "url": "https://jp.mercari.com/item/m83578755370",
-    "seller_id": 387217876,
+    "seller_id": "387217876",
     "price_history": [
       {
         "price": 3999,
@@ -74483,9 +74483,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Stadium",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m57239593489_1.jpg?1791384392",
+    "image": "https://static.mercdn.net/thumb/item/webp/m57239593489_1.jpg?1791384392",
     "url": "https://jp.mercari.com/item/m57239593489",
-    "seller_id": 647367816,
+    "seller_id": "647367816",
     "price_history": [
       {
         "price": 22000,
@@ -75116,16 +75116,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m64585024507_1.jpg?1791423804",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m64585024507_1.jpg?1791423804",
     "url": "https://jp.mercari.com/item/m64585024507",
-    "seller_id": "234269600",
+    "seller_id": 234269600,
     "price_history": [
       {
         "price": 600,
         "timestamp": 1791430907
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m34442782314": {
     "status": "on_sale",
@@ -75173,16 +75173,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m32424847273_1.jpg?1773547347",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m32424847273_1.jpg?1773547347",
     "url": "https://jp.mercari.com/item/m32424847273",
-    "seller_id": "367340098",
+    "seller_id": 367340098,
     "price_history": [
       {
         "price": 4000,
         "timestamp": 1791433014
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m28697846627": {
     "status": "sold",
@@ -75329,16 +75329,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m14712896317_1.jpg?1791436907",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m14712896317_1.jpg?1791436907",
     "url": "https://jp.mercari.com/item/m14712896317",
-    "seller_id": "299662484",
+    "seller_id": 299662484,
     "price_history": [
       {
         "price": 1111,
         "timestamp": 1791437196
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m33850643342": {
     "status": "sold",
@@ -75386,9 +75386,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m84480668518_1.jpg?1791440904",
+    "image": "https://static.mercdn.net/thumb/item/webp/m84480668518_1.jpg?1791440904",
     "url": "https://jp.mercari.com/item/m84480668518",
-    "seller_id": 369754183,
+    "seller_id": "369754183",
     "price_history": [
       {
         "price": 29900,
@@ -75523,9 +75523,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m62352537337_1.jpg?1791447586",
+    "image": "https://static.mercdn.net/thumb/item/webp/m62352537337_1.jpg?1791447586",
     "url": "https://jp.mercari.com/item/m62352537337",
-    "seller_id": 955872648,
+    "seller_id": "955872648",
     "price_history": [
       {
         "price": 6000,
@@ -75561,9 +75561,9 @@
     "shipping": "🚚 Free Shipping",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m84545195347_1.jpg?1791450175",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m84545195347_1.jpg?1791450175",
     "url": "https://jp.mercari.com/item/m84545195347",
-    "seller_id": "995232885",
+    "seller_id": 995232885,
     "price_history": [
       {
         "price": 30000,
@@ -75582,7 +75582,7 @@
         "timestamp": 1791519716
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m14329974681": {
     "status": "removed",
@@ -75687,9 +75687,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m90259650629_1.jpg?1791453890",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m90259650629_1.jpg?1791453890",
     "url": "https://jp.mercari.com/item/m90259650629",
-    "seller_id": "194632394",
+    "seller_id": 194632394,
     "price_history": [
       {
         "price": 4980,
@@ -75700,7 +75700,7 @@
         "timestamp": 1791546997
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m62717435591": {
     "status": "removed",
@@ -75837,9 +75837,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m59085433285_1.jpg?1791459283",
+    "image": "https://static.mercdn.net/thumb/item/webp/m59085433285_1.jpg?1791459283",
     "url": "https://jp.mercari.com/item/m59085433285",
-    "seller_id": 329186427,
+    "seller_id": "329186427",
     "price_history": [
       {
         "price": 5555,
@@ -76121,9 +76121,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m99229918924_1.jpg?1791461359",
+    "image": "https://static.mercdn.net/thumb/item/webp/m99229918924_1.jpg?1791461359",
     "url": "https://jp.mercari.com/item/m99229918924",
-    "seller_id": 810250181,
+    "seller_id": "810250181",
     "price_history": [
       {
         "price": 19999,
@@ -76527,9 +76527,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m93766003022_1.jpg?1791463669",
+    "image": "https://static.mercdn.net/thumb/item/webp/m93766003022_1.jpg?1791463669",
     "url": "https://jp.mercari.com/item/m93766003022",
-    "seller_id": 983027432,
+    "seller_id": "983027432",
     "price_history": [
       {
         "price": 3333,
@@ -76908,16 +76908,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m45679207851_1.jpg?1791468267",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m45679207851_1.jpg?1791468267",
     "url": "https://jp.mercari.com/item/m45679207851",
-    "seller_id": "198554103",
+    "seller_id": 198554103,
     "price_history": [
       {
         "price": 2222,
         "timestamp": 1791468399
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m69323841174": {
     "status": "on_sale",
@@ -77235,9 +77235,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m19766008125_1.jpg?1791510135",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m19766008125_1.jpg?1791510135",
     "url": "https://jp.mercari.com/item/m19766008125",
-    "seller_id": "285924739",
+    "seller_id": 285924739,
     "price_history": [
       {
         "price": 399,
@@ -77248,7 +77248,7 @@
         "timestamp": 1791517606
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m16009179786": {
     "status": "sold",
@@ -77371,16 +77371,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m10742152193_1.jpg?1791517338",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m10742152193_1.jpg?1791517338",
     "url": "https://jp.mercari.com/item/m10742152193",
-    "seller_id": "563256773",
+    "seller_id": 563256773,
     "price_history": [
       {
         "price": 11111,
         "timestamp": 1791517606
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m13441281088": {
     "status": "removed",
@@ -77436,9 +77436,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m99311867378_1.jpg?1791527666",
+    "image": "https://static.mercdn.net/thumb/item/webp/m99311867378_1.jpg?1791527666",
     "url": "https://jp.mercari.com/item/m99311867378",
-    "seller_id": 291106048,
+    "seller_id": "291106048",
     "price_history": [
       {
         "price": 9500,
@@ -77539,9 +77539,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m72942551394_1.jpg?1791535655",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m72942551394_1.jpg?1791535655",
     "url": "https://jp.mercari.com/item/m72942551394",
-    "seller_id": "495511864",
+    "seller_id": 495511864,
     "price_history": [
       {
         "price": 250000,
@@ -77556,7 +77556,7 @@
         "timestamp": 1791542803
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "amz_B0HLLBWJJG": {
     "status": "sold",
@@ -77613,9 +77613,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m53160223288_1.jpg?1791541348",
+    "image": "https://static.mercdn.net/thumb/item/webp/m53160223288_1.jpg?1791541348",
     "url": "https://jp.mercari.com/item/m53160223288",
-    "seller_id": 645770022,
+    "seller_id": "645770022",
     "price_history": [
       {
         "price": 15000,
@@ -77855,9 +77855,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m47076075633_1.jpg?1791546661",
+    "image": "https://static.mercdn.net/thumb/item/webp/m47076075633_1.jpg?1791546661",
     "url": "https://jp.mercari.com/item/m47076075633",
-    "seller_id": 805812940,
+    "seller_id": "805812940",
     "price_history": [
       {
         "price": 1800,
@@ -77874,16 +77874,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m37740771440_1.jpg?1791546919",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m37740771440_1.jpg?1791546919",
     "url": "https://jp.mercari.com/item/m37740771440",
-    "seller_id": "805812940",
+    "seller_id": 805812940,
     "price_history": [
       {
         "price": 2800,
         "timestamp": 1791546997
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m93906038525": {
     "status": "on_sale",
@@ -77893,16 +77893,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m93906038525_1.jpg?1791546871",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m93906038525_1.jpg?1791546871",
     "url": "https://jp.mercari.com/item/m93906038525",
-    "seller_id": "805812940",
+    "seller_id": 805812940,
     "price_history": [
       {
         "price": 2800,
         "timestamp": 1791546997
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m56993738568": {
     "status": "on_sale",
@@ -77912,16 +77912,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m56993738568_1.jpg?1791546790",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m56993738568_1.jpg?1791546790",
     "url": "https://jp.mercari.com/item/m56993738568",
-    "seller_id": "805812940",
+    "seller_id": 805812940,
     "price_history": [
       {
         "price": 3500,
         "timestamp": 1791546997
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m99086532749": {
     "status": "on_sale",
@@ -77931,16 +77931,16 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/webp/m99086532749_1.jpg?1791546732",
+    "image": "https://static.mercdn.net/thumb/item/jpeg/m99086532749_1.jpg?1791546732",
     "url": "https://jp.mercari.com/item/m99086532749",
-    "seller_id": "805812940",
+    "seller_id": 805812940,
     "price_history": [
       {
         "price": 1800,
         "timestamp": 1791546997
       }
     ],
-    "last_checked": 1791565895
+    "last_checked": 1791567999
   },
   "m70242010635": {
     "status": "on_sale",
@@ -78334,9 +78334,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Bulk Lot",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m58079669693_1.jpg?1783419211",
+    "image": "https://static.mercdn.net/thumb/item/webp/m58079669693_1.jpg?1783419211",
     "url": "https://jp.mercari.com/item/m58079669693",
-    "seller_id": 272791545,
+    "seller_id": "272791545",
     "price_history": [
       {
         "price": 30000,
@@ -78353,9 +78353,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m40663387825_1.jpg?1791548633",
+    "image": "https://static.mercdn.net/thumb/item/webp/m40663387825_1.jpg?1791548633",
     "url": "https://jp.mercari.com/item/m40663387825",
-    "seller_id": 805812940,
+    "seller_id": "805812940",
     "price_history": [
       {
         "price": 14000,
@@ -78372,9 +78372,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m25130407224_1.jpg?1791548582",
+    "image": "https://static.mercdn.net/thumb/item/webp/m25130407224_1.jpg?1791548582",
     "url": "https://jp.mercari.com/item/m25130407224",
-    "seller_id": 805812940,
+    "seller_id": "805812940",
     "price_history": [
       {
         "price": 11500,
@@ -78391,9 +78391,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m83851037136_1.jpg?1791548514",
+    "image": "https://static.mercdn.net/thumb/item/webp/m83851037136_1.jpg?1791548514",
     "url": "https://jp.mercari.com/item/m83851037136",
-    "seller_id": 805812940,
+    "seller_id": "805812940",
     "price_history": [
       {
         "price": 4000,
@@ -78410,9 +78410,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m40755496815_1.jpg?1791548456",
+    "image": "https://static.mercdn.net/thumb/item/webp/m40755496815_1.jpg?1791548456",
     "url": "https://jp.mercari.com/item/m40755496815",
-    "seller_id": 805812940,
+    "seller_id": "805812940",
     "price_history": [
       {
         "price": 5600,
@@ -78538,9 +78538,9 @@
     "shipping": "📦 Buyer Pays",
     "category": "Individual Bey",
     "availability": "",
-    "image": "https://static.mercdn.net/thumb/item/jpeg/m36782527899_1.jpg?1780407336",
+    "image": "https://static.mercdn.net/thumb/item/webp/m36782527899_1.jpg?1780407336",
     "url": "https://jp.mercari.com/item/m36782527899",
-    "seller_id": 513007255,
+    "seller_id": "513007255",
     "price_history": [
       {
         "price": 840,
