@@ -117,8 +117,19 @@ def notify(webhook_config, item, price_tiers=None):
     availability = item.get("availability")
     
     display_title = translated_title or original_title
-    if event_type == "back_in_stock":
-        display_title = f"🟢 BACK IN STOCK: {display_title}"
+    if event_type == "restock":
+        stock_change = item.get("stock_change")
+        if stock_change:
+            display_title = f"📦 RESTOCKED ({stock_change}): {display_title}"
+        else:
+            display_title = f"📦 RESTOCKED: {display_title}"
+        embed_color = 3066993  # 0x2ECC71 (Green)
+    elif event_type == "back_in_stock":
+        stock_change = item.get("stock_change")
+        if stock_change:
+            display_title = f"🟢 BACK IN STOCK ({stock_change}): {display_title}"
+        else:
+            display_title = f"🟢 BACK IN STOCK: {display_title}"
         embed_color = 3066993  # 0x2ECC71 (Green)
     elif event_type == "pre_order":
         display_title = f"📦 PRE-ORDER OPEN: {display_title}"
@@ -154,6 +165,8 @@ def notify(webhook_config, item, price_tiers=None):
     else:
         fields = [{"name": "Price", "value": "Check Store", "inline": True}]
     
+    if item.get("stock_change"):
+        fields.append({"name": "Restock Update", "value": item["stock_change"], "inline": True})
     if availability:
         fields.append({"name": "Availability", "value": availability, "inline": True})
     if condition:

@@ -87,20 +87,30 @@ def parse_search_or_store_page(html):
         card_text = card.get_text(separator=" ", strip=True)
         status = "on_sale"
         availability = "✅ In Stock"
+        stock_qty = None
 
-        if "発売予定日" in card_text or "予約" in card_text:
+        is_preorder = "発売予定日" in card_text or "予約" in card_text
+        is_explicit_oos = any(kw.lower() in card_text.lower() for kw in OUT_OF_STOCK_KEYWORDS)
+        qty_match = re.search(r"残り\s*(\d+)\s*点", card_text) or re.search(r"Only\s+(\d+)\s+left", card_text, re.IGNORECASE)
+
+        if is_preorder:
             match = re.search(r"(\d+月\d+日)発売予定", card_text)
             date_str = f" ({match.group(1)})" if match else ""
             availability = f"📦 Pre-order{date_str}"
             status = "on_sale"
-        elif "一時的に在庫切れ" in card_text or "Currently unavailable" in card_text or "在庫切れ" in card_text:
+            stock_qty = None
+        elif is_explicit_oos or (price is None and not is_preorder):
             availability = "❌ Out of Stock"
             status = "sold"
-        elif "残り" in card_text and "点" in card_text:
-            match = re.search(r"残り(\d+点)", card_text)
-            qty_str = match.group(1) if match else "few"
-            availability = f"⚠️ Only {qty_str} left"
+            stock_qty = 0
+        elif qty_match:
+            stock_qty = int(qty_match.group(1))
+            availability = f"⚠️ Only {stock_qty} left"
             status = "on_sale"
+        else:
+            availability = "✅ In Stock"
+            status = "on_sale"
+            stock_qty = None
 
         canonical_url = f"https://www.amazon.co.jp/dp/{asin}"
 
@@ -112,6 +122,7 @@ def parse_search_or_store_page(html):
             "price": price,
             "status": status,
             "availability": availability,
+            "stock_qty": stock_qty,
             "condition": "🆕 Brand New (Amazon)",
             "shipping": "🚚 Prime / Amazon JP",
             "seller_id": "Amazon.co.jp",
@@ -227,26 +238,6 @@ def _parse_single_product_html(html, asin):
     img_elem = soup.find(id="landingImage") or soup.select_one("#imgTagWrapperId img") or soup.select_one("#main-image")
     image_url = img_elem.get("data-old-hires") or img_elem.get("src") or "" if img_elem else ""
 
-    avail_elem = soup.find(id="availability")
-    avail_text = avail_elem.get_text(strip=True) if avail_elem else ""
-
-    is_out_of_stock = False
-    for kw in OUT_OF_STOCK_KEYWORDS:
-        if kw.lower() in avail_text.lower() or kw.lower() in html.lower():
-            is_out_of_stock = True
-            break
-
-    status = "sold" if is_out_of_stock else "on_sale"
-    availability = "❌ Out of Stock" if is_out_of_stock else "✅ In Stock"
-    if "発売予定日" in avail_text or "予約" in avail_text:
-        match = re.search(r"(\d+月\d+日)発売予定", avail_text)
-        date_str = f" ({match.group(1)})" if match else ""
-        availability = f"📦 Pre-order{date_str}"
-    elif "残り" in avail_text:
-        match = re.search(r"残り(\d+点)", avail_text)
-        qty_str = match.group(1) if match else "few"
-        availability = f"⚠️ Only {qty_str} left"
-
     price = None
     main_containers = [
         soup.find(id="corePriceDisplay_desktop_feature_div"),
@@ -286,6 +277,33 @@ def _parse_single_product_html(html, asin):
         if price is not None:
             break
 
+    avail_elem = soup.find(id="availability")
+    avail_text = avail_elem.get_text(strip=True) if avail_elem else ""
+    out_of_stock_div = soup.find(id="outOfStock")
+
+    is_preorder = "発売予定日" in avail_text or "予約" in avail_text
+    is_explicit_oos = bool(out_of_stock_div) or any(kw.lower() in avail_text.lower() for kw in OUT_OF_STOCK_KEYWORDS)
+    qty_match = re.search(r"残り\s*(\d+)\s*点", avail_text) or re.search(r"Only\s+(\d+)\s+left", avail_text, re.IGNORECASE)
+
+    if is_preorder:
+        match = re.search(r"(\d+月\d+日)発売予定", avail_text)
+        date_str = f" ({match.group(1)})" if match else ""
+        availability = f"📦 Pre-order{date_str}"
+        status = "on_sale"
+        stock_qty = None
+    elif is_explicit_oos or (price is None and not is_preorder):
+        availability = "❌ Out of Stock"
+        status = "sold"
+        stock_qty = 0
+    elif qty_match:
+        stock_qty = int(qty_match.group(1))
+        availability = f"⚠️ Only {stock_qty} left"
+        status = "on_sale"
+    else:
+        availability = "✅ In Stock"
+        status = "on_sale"
+        stock_qty = None
+
     seller = "Amazon.co.jp"
     merchant_elem = soup.find(id="merchant-info")
     if merchant_elem:
@@ -301,6 +319,7 @@ def _parse_single_product_html(html, asin):
         "price": price,
         "status": status,
         "availability": availability,
+        "stock_qty": stock_qty,
         "condition": "🆕 Brand New (Amazon)",
         "shipping": "🚚 Prime / Amazon JP",
         "seller_id": seller,
@@ -319,12 +338,55 @@ def fetch_single_amazon_product(url_or_asin):
         session = requests.Session()
         cookies = {"i18n-prefs": "JPY", "lc-acbjp": "ja_JP", "sp-cdn": "L5Z9:JP"}
         r = session.get(url, headers=HEADERS, cookies=cookies, verify=False, timeout=20)
-        if r.status_code == 200:
+        if r.status_code == 200 and "captcha" not in r.text.lower() and "robot check" not in r.text.lower():
             parsed = _parse_single_product_html(r.text, asin)
             if parsed and parsed.get("title"):
                 return parsed
     except Exception:
         pass
+
+    # Playwright fallback if requests hits bot check / captcha
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=True,
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                    "--disable-setuid-sandbox",
+                    "--disable-dev-shm-usage",
+                    "--disable-gpu",
+                    "--disable-infobars",
+                    "--ignore-certificate-errors"
+                ]
+            )
+            context = browser.new_context(
+                user_agent=HEADERS["User-Agent"],
+                locale="ja-JP",
+                viewport={"width": 1920, "height": 1080},
+                extra_http_headers={"Accept-Language": "ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7"}
+            )
+            context.add_cookies([
+                {"name": "i18n-prefs", "value": "JPY", "domain": ".amazon.co.jp", "path": "/"},
+                {"name": "lc-acbjp", "value": "ja_JP", "domain": ".amazon.co.jp", "path": "/"},
+                {"name": "sp-cdn", "value": "L5Z9:JP", "domain": ".amazon.co.jp", "path": "/"}
+            ])
+            page = context.new_page()
+            page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+            page.goto(url, wait_until="domcontentloaded", timeout=40000)
+            try:
+                page.wait_for_selector("#productTitle", timeout=10000)
+            except Exception:
+                pass
+            html = page.content()
+            browser.close()
+            parsed = _parse_single_product_html(html, asin)
+            if parsed and parsed.get("title"):
+                return parsed
+    except Exception as e:
+        print(f"  [!] Playwright fallback failed for {url}: {e}")
+
     return None
 
 
